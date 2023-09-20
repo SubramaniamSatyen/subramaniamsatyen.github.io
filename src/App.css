@@ -1,5 +1,29 @@
+:root{
+  --color-primary: #19c37d;
+  --color-secondary: #715fde;
+  --color-error: #ef4146;
+  --gradient-primary: linear-gradient(90deg,#a29bd4,#989fdd);
+  --background-primary: #1a202c;
+  --background-secondary: #ECE8DD;
+  --background-highlight: #579BB1;
+  --background-light: #F8F4EA;
+  --background-dark: #d2c8b8;
+
+  --dark-primary: #171923; 
+  --dark-default: #282c34;
+  --dark-secondary: #6e6e80;
+  --dark-disabled: #acacbe; 
+  --text-error: var(--color-error);
+}
+
+.application {
+  max-width: 100vw;
+  overflow: hidden;
+}
+
 .App {
   text-align: center;
+  background-color: var(--background-primary);
 }
 
 .App-logo {
@@ -36,3 +60,4 @@
     transform: rotate(360deg);
   }
 }
+
