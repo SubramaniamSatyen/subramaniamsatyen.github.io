@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 
 import Home from "../pages/Home";
 import NavBar from "../components/NavBar";
-
+import Footer from "../components/Footer";
 
 //Rerturn webpage as route header and page body, with endpoints further protected under RequireAuth component
 const RenderedWebpage = () => {
@@ -17,6 +17,7 @@ const RenderedWebpage = () => {
                     <Route path="/contact" element={<Home />} />                        
                     <Route path="*" element={<Navigate to="/" replace />} />
                 </Routes>
+                <Footer />
             </BrowserRouter>
         </div>
     )

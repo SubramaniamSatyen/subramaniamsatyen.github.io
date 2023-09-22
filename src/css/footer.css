@@ -1,0 +1,34 @@
+.footer {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: var(--dark-primary);
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.links {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-left: 75px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.link {
+    padding-right: 15px;
+}
+
+.copyright {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-left: 75px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 75px;
+}
