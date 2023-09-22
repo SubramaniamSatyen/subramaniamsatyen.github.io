@@ -6,7 +6,8 @@
     background-color: var(--dark-primary);
     height: 60px;
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 a{
@@ -14,9 +15,27 @@ a{
     color: white
 }
 
+.nav-header{
+    font-size: 1.4em;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 40px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+}
+
 .nav-item {
     font-size: 1em;
     padding-top: 20px;
+    padding-bottom: 20px;
     margin-right: 40px;
     color: white;
     text-align: center;
@@ -38,7 +57,7 @@ a{
     left: 0;
     right: 0;
     bottom: 0;
-    background: white;
+    background: var(--color-primary);
     height: 4px;
     -webkit-transform: translateY(4px);
     transform: translateY(4px);

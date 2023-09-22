@@ -9,18 +9,25 @@ function NavBar() {
     return (
         <div>
             <ul class="nav-menu">
-                <li className='nav-item'>
-                    <Link to="/">About</Link>
-                </li>   
-                <li className='nav-item'>
-                    <Link to="/experience">Experience</Link>
-                </li>                
-                <li className='nav-item'>
-                    <Link to="/projects">Projects</Link>
-                </li>
-                <li className='nav-item'>
-                    <Link to="/contact">Contact</Link>
-                </li>
+                <div>
+                    <li className='nav-header'>
+                        <Link to="/">Satyen Subramaniam</Link>
+                    </li>   
+                </div>
+                <div>
+                    <li className='nav-item'>
+                        <Link to="/">About</Link>
+                    </li>   
+                    <li className='nav-item'>
+                        <Link to="/experience">Experience</Link>
+                    </li>                
+                    <li className='nav-item'>
+                        <Link to="/projects">Projects</Link>
+                    </li>
+                    <li className='nav-item'>
+                        <Link to="/awards">Awards</Link>
+                    </li>
+                </div>
             </ul>
         </div>
     );

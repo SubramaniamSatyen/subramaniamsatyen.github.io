@@ -1,19 +1,20 @@
 :root{
-  --color-primary: #19c37d;
+  --color-primary: #38b2ac;
   --color-secondary: #715fde;
   --color-error: #ef4146;
   --gradient-primary: linear-gradient(90deg,#a29bd4,#989fdd);
   --background-primary: #1a202c;
-  --background-secondary: #ECE8DD;
+  --background-secondary: #2d3748;
   --background-highlight: #579BB1;
   --background-light: #F8F4EA;
   --background-dark: #d2c8b8;
 
-  --dark-primary: #171923; 
+  --dark-primary: #171923;
   --dark-default: #282c34;
   --dark-secondary: #6e6e80;
   --dark-disabled: #acacbe; 
   --text-error: var(--color-error);
+  color: white;
 }
 
 .application {
@@ -22,8 +23,8 @@
 }
 
 .App {
-  text-align: center;
   background-color: var(--background-primary);
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -61,3 +62,87 @@
   }
 }
 
+.highlight {
+  color: var(--color-primary)
+}
+
+h1 {
+  font-size: 2.5em;
+  font-weight: 500;
+}
+
+h2 {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+  font-size: 2em;
+  font-weight: 400;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.textBlock {
+  font-size: 1.5em;
+  font-weight: 200;
+}
+
+.paragraphBlock {
+  font-size: 1.1em;
+  font-weight: 200;
+}
+
+.heroText {
+  vertical-align: middle;
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+}
+
+.headshot {
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+  vertical-align: middle;
+  margin-left: 4vw;
+}
+
+.row {
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.postEntry {
+  background-color: var(--background-secondary);
+  margin-left: 8vw;
+  margin-right: 8vw;
+  margin-bottom: 5vh;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  border-radius: 10px;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.columnTwo {
+  float: left;
+  width: 39%;
+}
+
+/* Clear floats after the columns */
+.rowTwo:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.leftAlign {
+  margin-left: 10vw;
+}
+
+.rightAlign {
+  margin-right: 10vw;
+}
