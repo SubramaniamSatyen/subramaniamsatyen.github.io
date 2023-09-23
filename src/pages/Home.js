@@ -1,6 +1,6 @@
 import '../App.css';
 
-import headshot from '../images/headshot.jpg';
+import headshot from '../images/headshot_close.png';
 
 function Home({ dimensions }) {
   return (
@@ -14,12 +14,11 @@ function Home({ dimensions }) {
             Click around to learn more about my interests, experience, and projects and feel free to reach out via LinkedIn or email.
           </p>
         </div>
-        <div className='columnTwo rightAlign'>
+        <div className='columnTwoSmall rightAlign'>
           <img
             className='headshot'
             src={headshot}
-            width={dimensions.width * 35 / 100}
-            height= {dimensions.height * 50 / 100}
+            width='350px'
             alt="Headshot of Satyen"
           ></img>
         </div>

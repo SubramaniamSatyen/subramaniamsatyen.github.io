@@ -5,28 +5,22 @@ import '../css/navbar.css'
 
 import React from 'react'
 
-function NavBar() {
+function NavBar({dimensions}) {
     return (
         <div>
             <ul class="nav-menu">
                 <div>
+                    {dimensions.width > 640 ? 
                     <li className='nav-header'>
                         <Link to="/">Satyen Subramaniam</Link>
                     </li>   
+                    : null }
                 </div>
                 <div>
-                    <li className='nav-item'>
-                        <Link to="/">About</Link>
-                    </li>   
-                    <li className='nav-item'>
-                        <Link to="/experience">Experience</Link>
-                    </li>                
-                    <li className='nav-item'>
-                        <Link to="/projects">Projects</Link>
-                    </li>
-                    <li className='nav-item'>
-                        <Link to="/awards">Awards</Link>
-                    </li>
+                    <Link to="/"><li className='nav-item'>About</li></Link>
+                    <Link to="/experience"><li className='nav-item'>Experience</li></Link>
+                    <Link to="/projects"><li className='nav-item'>Projects</li></Link>
+                    <Link to="/awards"><li className='nav-item'>Awards</li></Link>
                 </div>
             </ul>
         </div>

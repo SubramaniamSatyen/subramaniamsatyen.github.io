@@ -44,7 +44,7 @@ const RenderedWebpage = () => {
     return (
         <div className="App">
             <BrowserRouter>
-                <NavBar />
+                <NavBar dimensions={dimensions} />
                 <Routes>
                     <Route exact path="/" element={<Home dimensions={dimensions} />} />
                     <Route path="/experience" element={<Experience dimensions={dimensions} />} />

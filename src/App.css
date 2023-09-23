@@ -11,7 +11,7 @@
 
   --dark-primary: #171923;
   --dark-default: #282c34;
-  --dark-secondary: #6e6e80;
+  --dark-secondary: #3d4756;
   --dark-disabled: #acacbe; 
   --text-error: var(--color-error);
   color: white;
@@ -80,6 +80,12 @@ h2 {
   justify-content: flex-start;
 }
 
+h3 {
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
 .textBlock {
   font-size: 1.5em;
   font-weight: 200;
@@ -88,6 +94,7 @@ h2 {
 .paragraphBlock {
   font-size: 1.1em;
   font-weight: 200;
+  margin-top: 0px;
 }
 
 .heroText {
@@ -97,9 +104,7 @@ h2 {
 }
 
 .headshot {
-  margin-top: 20vh;
-  margin-bottom: 20vh;
-  vertical-align: middle;
+  border-radius: 10px;
   margin-left: 4vw;
 }
 
@@ -107,7 +112,7 @@ h2 {
   padding-top: 2vh;
   padding-bottom: 2vh;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-start;
 }
 
 .postEntry {
@@ -128,21 +133,49 @@ h2 {
 }
 
 .columnTwo {
-  float: left;
-  width: 39%;
+  flex: 2;
 }
 
-/* Clear floats after the columns */
-.rowTwo:after {
-  content: "";
-  display: table;
-  clear: both;
+.columnTwoSmall {
+  flex: 1;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  vertical-align: middle;
+}
+
+.rowTwo {
+  display: flex;
 }
 
 .leftAlign {
   margin-left: 10vw;
 }
 
+.paddingTop {
+  padding-top: 15px;
+}
+
 .rightAlign {
   margin-right: 10vw;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5vw;
+}
+
+.logoImage {
+  border-radius: 4px;
+}
+
+.accomplishments {
+  margin-top: 0px;
+}
+
+.skill {
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
