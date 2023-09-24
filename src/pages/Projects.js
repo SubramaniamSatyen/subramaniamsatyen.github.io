@@ -11,7 +11,7 @@ function Projects() {
     <div className="App application">
       <h1 className='leftAlign'>Research Projects: </h1>
       <div className="postEntry">
-        <h2>UCLA Scalable Analytics Institute</h2>
+        <h2 id='ucla-scalable-analytics-institute'><a href='#ucla-scalable-analytics-institute'>UCLA Scalable Analytics Institute</a></h2>
         <div className='row'>
           <div>
             <p className='paragraphBlock'>
@@ -49,7 +49,7 @@ function Projects() {
         </div>
       </div>
       <div className="postEntry">
-        <h2>UCLA Sensing and Robotics for Infrastructure</h2>
+        <h2 id='ucla-sensing-and-robotics'><a href='#ucla-sensing-and-robotics'>UCLA Sensing and Robotics for Infrastructure</a></h2>
         <div className='row'>
           <div>
             <p className='paragraphBlock'>
@@ -97,7 +97,7 @@ function Projects() {
       </div>
       <h1 className='leftAlign'>Club Projects: </h1>
       <div className="postEntry">
-        <h2>ACM Hack - HackCloud</h2>
+        <h2 id='hackcloud'><a href='#hackcloud'>ACM Hack - HackCloud</a></h2>
         <div className='row'>
           <div>
             <p className='paragraphBlock'>
@@ -125,7 +125,7 @@ function Projects() {
         </div>
       </div>
       <div className="postEntry">
-        <h2>ACM Hack - HackFam</h2>
+        <h2 id='hackfam'><a href='#hackfam'>ACM Hack - HackFam</a></h2>
         <div className='row'>
           <div>
             <p className='paragraphBlock'>
@@ -147,7 +147,7 @@ function Projects() {
         </div>
       </div>
       <div className="postEntry">
-        <h2>ACM Cloud and Distributed Systems Initiative</h2>
+        <h2 id='distributed-systems'><a href='#distributed-systems'>ACM Cloud and Distributed Systems Initiative</a></h2>
         <div className='row'>
           <div>
             <p className='paragraphBlock'>
@@ -174,7 +174,7 @@ function Projects() {
       </div>
       <h1 className='leftAlign'>Other Projects: </h1>
       <div className="postEntry">
-        <h2>Voice Activated Calculator</h2>
+        <h2 id='voice-activated-calculator'><a href='#voice-activated-calculator'>Voice Activated Calculator</a></h2>
         <div className='row'>
           <div>
             <p className='paragraphBlock'>
@@ -198,11 +198,11 @@ function Projects() {
         </div>
       </div>
       <div className="postEntry">
-        <h2>HackSpace 2022: ReactWithMe</h2>
+        <h2 id='reactwithme'><a href='#reactwithme'>HackSpace 2022: ReactWithMe</a></h2>
         <div className='row'>
           <div>
             <p className='paragraphBlock'>
-              An mobile app created with a team of four UCLA students during the course of a quarter: ReactWithMe. Our app allows users to 
+              A mobile app created with a team of four UCLA students during the course of a quarter: ReactWithMe. Our app allows users to 
               add timestamped reactions when watching a video, then share those reactions so friends can see you react in real time as they
               watch the same content. The app was created using firebase for persistent storage and React Native for our UI.
             </p>
@@ -221,7 +221,7 @@ function Projects() {
         </div>
       </div>
       <div className="postEntry">
-        <h2>Class Projects</h2>
+        <h2 id='class-projects'><a href='#class-projects'>Class Projects</a></h2>
         <div className='row'>
           <div>
             <p className='paragraphBlock'>

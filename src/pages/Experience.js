@@ -12,7 +12,7 @@ function Experience() {
     <div className="App application">
       <h1 className='leftAlign'>Work Experience: </h1>
       <div className="postEntry">
-        <h2>Pacific Northwest National Laboratory - Software Engineering Intern</h2>
+        <h2 id='pnnl'><a href='#pnnl'>Pacific Northwest National Laboratory - Software Engineering Intern</a></h2>
         <div className='row'>
           <div>
             <p className='paragraphBlock'>
@@ -53,7 +53,7 @@ function Experience() {
         </div>
       </div>
       <div className="postEntry">
-        <h2>Los Angeles Housing Department - Student Worker</h2>
+        <h2 id='lahd'><a href='#lahd'>Los Angeles Housing Department - Student Worker</a></h2>
         <div className='row'>
           <div>
             <p className='paragraphBlock'>
@@ -91,7 +91,7 @@ function Experience() {
         </div>
       </div>
       <div className="postEntry">
-        <h2>Bond Intelligence - Software Engineering Intern</h2>
+        <h2 id='bond-intelligence'><a href='#bond-intelligence'>Bond Intelligence - Software Engineering Intern</a></h2>
         <div className='row'>
           <div>
             <p className='paragraphBlock'>
@@ -139,7 +139,7 @@ function Experience() {
       </div>
       <h1 className='leftAlign'>Teaching Experience: </h1>
       <div className="postEntry">
-        <h2>Wyzant Tutoring - C++ Fundamentals</h2>
+        <h2 id='wyzant'><a href='#wyzant'>Wyzant Tutoring - C++ Fundamentals</a></h2>
         <div className='row'>
           <div>
             <p className='paragraphBlock'>
@@ -161,7 +161,7 @@ function Experience() {
         </div>
       </div>
       <div className="postEntry">
-        <h2>UCLA Learning Assistant </h2>
+        <h2 id='learning-assistant'><a href='#learning-assistant'>UCLA Learning Assistant</a></h2>
         <div className='row'>
           <div>
             <p className='paragraphBlock'>
