@@ -1,6 +1,7 @@
 import '../App.css';
 
 import headshot from '../images/headshot_close.png';
+import { ColorButton, HighlightButton } from '../components/ColorButton';
 
 function Home({ dimensions }) {
   return (
@@ -13,6 +14,10 @@ function Home({ dimensions }) {
             <span className='highlight'>&nbsp;Cloud Computing</span>, and <span className='highlight'>&nbsp;Machine Learning</span>!
             Click around to learn more about my interests, experience, and projects and feel free to reach out via LinkedIn or email.
           </p>
+          <center>
+            <a className="link" href="https://drive.google.com/file/d/1c9BaaAhC59ew1dPcnq-N9GcRrPAWNLnQ/view?usp=sharing" target="_blank" rel="noreferrer"><HighlightButton>Resume</HighlightButton></a>
+            <ColorButton>Connect With ME!</ColorButton>
+          </center>
         </div>
         <div className='columnTwoSmall rightAlign'>
           <img

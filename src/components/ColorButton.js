@@ -10,4 +10,14 @@ export const ColorButton = styled(Button)(({ theme }) => ({
     '&:hover': {
       backgroundColor: 'var(--dark-primary)',
     },
-  }));
+}));
+
+export const HighlightButton = styled(Button)(({ theme }) => ({
+  color: 'white',
+  marginRight: '10px',
+  marginBottom: '10px',
+  backgroundColor: 'var(--color-primary)',
+  '&:hover': {
+    backgroundColor: 'var(--color-secondary)',
+  },
+}));
