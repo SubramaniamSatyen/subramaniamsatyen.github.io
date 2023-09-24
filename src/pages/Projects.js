@@ -172,6 +172,31 @@ function Projects() {
           </div>
         </div>
       </div>
+      <div className="postEntry">
+        <h2 id='stackschool'><a href='#stackschool'>ACM Hack - StackSchool</a></h2>
+        <div className='row'>
+          <div>
+            <p className='paragraphBlock'>
+              ACM StackSchool is a fullstack workshop series aiming to teach students to use the MERN tech stack. Over the course of seven weeks, we constructed a MERN 
+              social media application. To build a strong intutition for the tech stack, the ACM Hack officer team designed a four chapter textbook covering the essentials.
+            </p>
+            <p className='paragraphBlock'>
+              <h3>Skills:</h3>
+            </p>
+            <div>
+              <Chip label="React" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
+              <Chip label="Express.js" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
+              <Chip label="MongoDB" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
+            </div>
+            <p className='paragraphBlock'>
+              <h3>Resources:</h3>
+            </p>
+            <a className="link" href="https://github.com/uclaacm/hack-curriculum/tree/main/stackschool" target="_blank" rel="noreferrer"><ColorButton>Textbook</ColorButton></a>
+            <a className="link" href="https://github.com/SubramaniamSatyen/WinterLearningStackschool" target="_blank" rel="noreferrer"><ColorButton>MERN Demo Repo</ColorButton></a>
+            <a className="link" href="https://github.com/SubramaniamSatyen/Stackschool_2023_Cat_Server" target="_blank" rel="noreferrer"><ColorButton>REST API Demo Repo</ColorButton></a>
+          </div>
+        </div>
+      </div>
       <h1 className='leftAlign'>Other Projects: </h1>
       <div className="postEntry">
         <h2 id='voice-activated-calculator'><a href='#voice-activated-calculator'>Voice Activated Calculator</a></h2>
