@@ -7,19 +7,16 @@ function Awards() {
     <div className="App application">
       <h1 className='leftAlign'>Awards</h1>
       <div className="postEntry">
-        <h2>Upsilon Pi Epsilon (Computer Science Honor Society)</h2>
-      </div>
-      <div className="postEntry">
-        <h2>Eta Kappa Nu (Electrical Engineering Honor Society)</h2>
-      </div>
-      <div className="postEntry">
-        <h2>Tau Beta Pi (Engineering Honor Society)</h2>
-      </div>
-      <div className="postEntry">
         <h2>AWS Solutions Architect SAA-C02</h2>
       </div>
       <div className="postEntry">
         <h2>UCLA Hack on Hill - Best in Education</h2>
+      </div>
+      <div className="postEntry">
+        <h2>Upsilon Pi Epsilon (Computer Science Honor Society)</h2>
+      </div>
+      <div className="postEntry">
+        <h2>Eta Kappa Nu (Electrical Engineering Honor Society)</h2>
       </div>
       <div className="postEntry">
         <h2>Tau Beta Pi (Engineering Honor Society)</h2>
