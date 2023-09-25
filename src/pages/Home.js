@@ -16,7 +16,7 @@ function Home({ dimensions }) {
           </p>
           <center>
             <a className="link" href="https://drive.google.com/file/d/1c9BaaAhC59ew1dPcnq-N9GcRrPAWNLnQ/view?usp=sharing" target="_blank" rel="noreferrer"><HighlightButton>Resume</HighlightButton></a>
-            <ColorButton>Connect With ME!</ColorButton>
+            <a className="link" href="https://www.linkedin.com/in/satyen-sub" target="_blank" rel="noreferrer"><ColorButton>Connect With ME!</ColorButton></a>
           </center>
         </div>
         <div className='columnTwoSmall rightAlign'>
