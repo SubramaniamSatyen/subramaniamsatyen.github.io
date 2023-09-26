@@ -1,4 +1,6 @@
 import { Chip } from '@mui/material';
+import PostBody from '../components/PostBody';
+import PostHeader from '../components/PostHeader';
 
 import '../App.css';
 
@@ -7,19 +9,66 @@ function Awards() {
     <div className="App application">
       <h1 className='leftAlign'>Awards</h1>
       <div className="postEntry">
-        <h2>AWS Solutions Architect SAA-C02</h2>
+        <PostHeader 
+          id='saa-c02' 
+          text='AWS Solutions Architect SAA-C02'
+        />
+        <PostBody
+          blurb="AWS Certified Solutions Architect - Associate showcases knowledge and skills in AWS technology, across a wide range of 
+          AWS services. The focus of this certification is on the design of cost and performance optimized solutions, demonstrating a 
+          strong understanding of the AWS Well-Architected Framework."
+          links={[{'link': 'https://drive.google.com/file/d/1X_t5qzVTFdNMWExGCYOK-L3hkmZHaeSb/view?usp=sharing', 'text': 'View Certification'}]}  
+        />  
       </div>
       <div className="postEntry">
-        <h2>UCLA Hack on Hill - Best in Education</h2>
+        <PostHeader 
+          id='hack-on-the-hill' 
+          text='UCLA Hack on the Hill - Best in Education'
+        />
+        <PostBody
+          blurb="PlannedBruin is a student-friendly enrollment planner designed to supply UCLA students with a four year class schedule,
+           saving students from suffering from the common struggles surrounding enrollment restrictions, class availability, 
+           confusing prerequisite requirements, and more. This application won Best in Education at UCLA's annual Hack on the Hill hackathon."
+          links={[{'link': 'https://github.com/Lim-Stanley/class-plan', 'text': 'View Repo'}]}  
+        />  
       </div>
       <div className="postEntry">
-        <h2>Upsilon Pi Epsilon (Computer Science Honor Society)</h2>
+        <PostHeader 
+          id='upe' 
+          text='UCLA Computer Science Honor Society (UPE) - Tutoring Chair'
+        />
+        <PostBody
+          blurb="Upsilon Pi Epsilon is the International Honor Society for the Computing and Information Disciplines. UPE aims to maximize 
+          the personal and professional growth of students in the field of Computer Science. To be eligible for UPE membership, undergraduates 
+          must rank in the top 1/3rd of the senior class, have at least a 3.5 GPA, and complete community service requirements."
+          links={[{'link': 'https://upe.seas.ucla.edu/', 'text': 'UCLA UPE'}]}  
+        />  
       </div>
       <div className="postEntry">
-        <h2>Eta Kappa Nu (Electrical Engineering Honor Society)</h2>
+        <PostHeader 
+          id='hkn' 
+          text='UCLA Electrical Engineering Honor Society (HKN) - Member'
+        />
+        <PostBody
+          blurb="Eta Kappa Nu is an international Honor Society for Electrical and Computer Engineering. By organizing peer-to-peer tutoring, 
+          various workshops, review sessions, and career fairs, HKN wants to support and connect our engineering students with the best 
+          resources to enable them to succeed in academics and to explore their career options. To be eligible for HKN membership, undergraduates 
+          must rank in the top 1/3rd of the senior class, have at least a 3.5 GPA, and complete community service requirements."
+          links={[{'link': 'https://hkn.ee.ucla.edu/', 'text': 'UCLA HKN'}]}  
+        />  
       </div>
       <div className="postEntry">
-        <h2>Tau Beta Pi (Engineering Honor Society)</h2>
+        <PostHeader 
+          id='tbp' 
+          text='UCLA Engineering Honor Society (TBP) - Member'
+        />
+        <PostBody
+          blurb="Tau Beta Pi is the national honor society representing the entire engineering profession, and the California Epsilon chapter
+           has served the UCLA community since 1952. By recognizing professional achievement, as well as service, Tau Beta Pi strives to
+            uphold its creed of “Integrity and Excellence in Engineering.” To be eligible for HKN membership, undergraduates must rank in the
+             top 1/5rd of the senior class and complete community service requirements."
+          links={[{'link': 'https://tbp.seas.ucla.edu/', 'text': 'UCLA TBP'}]}  
+        />  
       </div>
       <h1 className='leftAlign'>Skills</h1>
       <div className="postEntry paddingTop">
