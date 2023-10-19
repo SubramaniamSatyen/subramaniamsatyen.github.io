@@ -52,7 +52,7 @@ const RenderedWebpage = () => {
                     <Route path="/awards" element={<Awards dimensions={dimensions} />} />
                     <Route path="*" element={<Navigate dimensions={dimensions} to="/" replace />} />
                 </Routes>
-                <Footer />
+                <Footer dimensions={dimensions}/>
             </BrowserRouter>
         </div>
     )

@@ -108,6 +108,11 @@ h3 {
   margin-bottom: 20vh;
 }
 
+.mobileHero {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
 .headshot {
   border-radius: 10px;
   margin-left: 4vw;
