@@ -1,1 +1,2 @@
 export const INCLUDE_IMAGE_WIDTH = 800
+export const MOBILE_THRESHOLD = 800
