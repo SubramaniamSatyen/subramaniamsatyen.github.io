@@ -169,6 +169,7 @@ function Projects() {
             <p className='paragraphBlock'>
               <h3>Resources:</h3>
             </p>
+            <a className="link" href="https://github.com/SubramaniamSatyen/CS111" target="_blank" rel="noreferrer"><ColorButton>CS 111 Repo</ColorButton></a>
             <a className="link" href="https://github.com/SubramaniamSatyen/CS35L" target="_blank" rel="noreferrer"><ColorButton>CS 35L Repo</ColorButton></a>
             <a className="link" href="https://github.com/hiimvincent/bruin-rides" target="_blank" rel="noreferrer"><ColorButton>CS 35L Project Repo</ColorButton></a>
             <a className="link" href="https://github.com/SubramaniamSatyen/CS33" target="_blank" rel="noreferrer"><ColorButton>CS 33 Repo</ColorButton></a>
