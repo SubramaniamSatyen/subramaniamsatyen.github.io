@@ -2,13 +2,14 @@ import { Chip } from '@mui/material';
 import { ColorButton } from '../components/ColorButton';
 import PostBody from '../components/PostBody';
 import PostHeader from '../components/PostHeader';
+import { INCLUDE_IMAGE_WIDTH } from '../constants'
 
 import ScAI from '../images/ScAI_Logo.png'
 import SRI from '../images/SRI_Logo.png'
 
 import '../App.css';
 
-function Projects() {
+function Projects({ dimensions }) {
   return (
     <div className="App application">
       <h1 className='leftAlign'>Research Projects: </h1>
@@ -26,6 +27,7 @@ function Projects() {
                             'Summarize accuracy of NLP model in paper by classifying incorrect predictions into 10 error categories']}
           skills={['Python', 'NLP']}
           links={[{'link': 'https://drive.google.com/file/d/1p2c0Z70m9Td4RDMVzSrBRpAb2kBcJ4Hc/view?usp=sharing', 'text': 'Read Paper'}]}
+          showLogo={dimensions.width > INCLUDE_IMAGE_WIDTH}
           logo={ScAI}
           logoWidth='200'
         />  
@@ -45,6 +47,7 @@ function Projects() {
                             'Architected hosting for 3D point cloud LiDAR street visualizations using AWS S3']}
           skills={['React', 'Express.js', 'AWS S3', 'AWS EC2', 'AWS Elastic Beanstalk', 'AWS Route 53']}
           links={[{'link': 'https://site.hspa.info/', 'text': 'View Site'}]}
+          showLogo={dimensions.width > INCLUDE_IMAGE_WIDTH}
           logo={SRI}
           logoWidth='200'
         />  

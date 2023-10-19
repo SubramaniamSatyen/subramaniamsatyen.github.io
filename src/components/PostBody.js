@@ -5,7 +5,7 @@ import '../App.css';
 
 import React from 'react'
 
-function PostBody({ blurb, accomplishments, skills, logo, logoAlt, logoWidth, logoHeight, links }) {
+function PostBody({ blurb, accomplishments, skills, showLogo, logo, logoAlt, logoWidth, logoHeight, links }) {
     return (
         <div className='row'>
           <div>
@@ -41,7 +41,7 @@ function PostBody({ blurb, accomplishments, skills, logo, logoAlt, logoWidth, lo
                 </div>
             : null}
           </div>
-          {logo ? 
+          {logo && showLogo ? 
           <div className='logo' >
             <img className='logoImage' alt={logoAlt} src={logo} width={logoWidth} height={logoHeight} />
           </div>

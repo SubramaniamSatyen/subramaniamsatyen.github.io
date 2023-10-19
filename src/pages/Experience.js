@@ -2,14 +2,13 @@ import PNNL from '../images/PNNL_Logo.png';
 import LAHD from '../images/LAHD_Logo.png';
 import Bond from '../images/Bond_Logo.png'
 
-import Chip from '@mui/material/Chip';
-import { ColorButton } from '../components/ColorButton';
 import PostHeader from '../components/PostHeader';
+import {INCLUDE_IMAGE_WIDTH} from '../constants'
 
 import '../App.css';
 import PostBody from '../components/PostBody';
 
-function Experience() {
+function Experience({ dimensions }) {
   return (
     <div className="App application">
       <h1 className='leftAlign'>Work Experience: </h1>
@@ -28,6 +27,7 @@ function Experience() {
             'Migrated development scale pipeline to AWS Glue and AWS EMR, with AWS Step Functions and Apache Oozie respectively for orchestration management, to evaluate viability as an alternative to Databricks pipeline']
           }
           skills={['Python', 'AWS S3', 'AWS EC2', 'AWS Glue', 'AWS EMR', 'Databricks', 'Pyspark']}
+          showLogo={dimensions.width > INCLUDE_IMAGE_WIDTH}
           logo={PNNL}
           logoAlt='PNNL Logo'
           logoWidth='200'
@@ -49,6 +49,7 @@ function Experience() {
             'Developed API to streamline process of adding invoice entries to Microsoft SQL Server database and secured endpoints with bearer authentication token']
           }
           skills={['SQL', 'ASP.NET', 'C#', 'JavaScript']}
+          showLogo={dimensions.width > INCLUDE_IMAGE_WIDTH}
           logo={LAHD}
           logoAlt='LAHD Logo'
           logoHeight='100'
@@ -71,6 +72,7 @@ function Experience() {
             'Assembled RESTful quant API service on Google Cloud Run to query BigQuery data, fetch calculated values from API, and visualize content with JavaScript on Looker dashboard']
           }
           skills={['Tensorflow', 'SciKit Learn', 'React', 'Typescript', 'Looker', 'GCP BigQuery', 'GCP App Engine']}
+          showLogo={dimensions.width > INCLUDE_IMAGE_WIDTH}
           logo={Bond}
           logoAlt='Bond Intelligence Logo'
           logoHeight='90'

@@ -1,0 +1,1 @@
+export const INCLUDE_IMAGE_WIDTH = 800
