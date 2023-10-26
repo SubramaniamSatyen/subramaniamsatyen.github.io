@@ -2,9 +2,14 @@ import { Chip } from '@mui/material';
 import PostBody from '../components/PostBody';
 import PostHeader from '../components/PostHeader';
 
+import AWS from '../images/AWS.png';
+import PB from '../images/PlannedBruin.jpg';
+
+import {INCLUDE_IMAGE_WIDTH} from '../constants';
+
 import '../App.css';
 
-function Awards() {
+function Awards({ dimensions }) {
   return (
     <div className="App application">
       <h1 className='leftAlign'>Awards</h1>
@@ -18,18 +23,25 @@ function Awards() {
           AWS services. The focus of this certification is on the design of cost and performance optimized solutions, demonstrating a 
           strong understanding of the AWS Well-Architected Framework."
           links={[{'link': 'https://drive.google.com/file/d/1X_t5qzVTFdNMWExGCYOK-L3hkmZHaeSb/view?usp=sharing', 'text': 'View Certification'}]}  
+          showLogo={dimensions.width > INCLUDE_IMAGE_WIDTH}
+          logo={AWS}
+          logoWidth='180'
         />  
       </div>
       <div className="postEntry">
         <PostHeader 
           id='hack-on-the-hill' 
-          text='UCLA Hack on the Hill - Best in Education'
+          text='UCLA Hack on the Hill 9 - Best in Education'
         />
         <PostBody
           blurb="PlannedBruin is a student-friendly enrollment planner designed to supply UCLA students with a four year class schedule,
            saving students from suffering from the common struggles surrounding enrollment restrictions, class availability, 
            confusing prerequisite requirements, and more. This application won Best in Education at UCLA's annual Hack on the Hill hackathon."
-          links={[{'link': 'https://github.com/Lim-Stanley/class-plan', 'text': 'View Repo'}]}  
+          links={[{'link': 'https://github.com/Lim-Stanley/class-plan', 'text': 'View Repo'},
+                  {'link': 'https://hoth.uclaacm.com/', 'text': 'Hack on the Hill Site'}]} 
+          showLogo={dimensions.width > INCLUDE_IMAGE_WIDTH}
+          logo={PB}
+          logoWidth='300' 
         />  
       </div>
       <div className="postEntry">

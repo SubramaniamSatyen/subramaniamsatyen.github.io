@@ -2,10 +2,17 @@ import { Chip } from '@mui/material';
 import { ColorButton } from '../components/ColorButton';
 import PostBody from '../components/PostBody';
 import PostHeader from '../components/PostHeader';
-import { INCLUDE_IMAGE_WIDTH } from '../constants'
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
-import ScAI from '../images/ScAI_Logo.png'
-import SRI from '../images/SRI_Logo.png'
+import { INCLUDE_IMAGE_WIDTH } from '../constants';
+
+import ScAI from '../images/ScAI_Logo.png';
+import SRI from '../images/SRI_Logo.png';
+import Cloud from '../images/HackCloud.png';
+import ACMCloud from '../images/ACMCloud.png';
+import StackSchool from '../images/StackSchool.png';
+import HackFam from '../images/HackFam.png';
+import Calc from '../images/Calculator.png';
 
 import '../App.css';
 
@@ -66,7 +73,11 @@ function Projects({ dimensions }) {
           dived into cloud fundamentals and best practices, tying the concepts into practical hands-on demos with Amazon Web Services."
           skills={['React', 'AWS S3', 'AWS EC2', 'AWS Lambda', 'Docker', 'AWS Code Deploy', 'AWS Code Pipeline']}
           links={[{'link': 'https://github.com/uclaacm/hack-curriculum/tree/main/HackCloud', 'text': 'HackCloud Repo'},
+                  {'link': 'https://youtube.com/playlist?list=PLPO7_kXilXFYP3nE3MfFmMg2BU9R4cKUu&si=9UvMDZ-xwLnKn8Do', 'text': 'Workshop Recordings'},
                   {'link': 'https://hack.uclaacm.com/archive#fall-2022-hackschool', 'text': 'ACM Hack Site'}]}
+          showLogo={dimensions.width > INCLUDE_IMAGE_WIDTH}
+          logo={Cloud}
+          logoWidth='300'
         />
       </div>
       <div className="postEntry">
@@ -80,6 +91,9 @@ function Projects({ dimensions }) {
           throughout the course of the quarter."
           skills={['React']}
           links={[{'link': 'https://hack.uclaacm.com/', 'text': 'ACM Hack Site'}]}
+          showLogo={dimensions.width > INCLUDE_IMAGE_WIDTH}
+          logo={HackFam}
+          logoWidth='400'
         />  
       </div>
       <div className="postEntry">
@@ -91,10 +105,13 @@ function Projects({ dimensions }) {
           blurb="ACM Cloud aims to providing resources to build a strong intuition of the architectural foundations of the modern
           cloud environment through project-based hands-on experience. ACM Cloud comprises of a weekly workshop series covering
           distributed system fundamentals and two hours worth of work time for our group distributed file system project."
-          skills={['Distributed Systems', 'Docker', 'Docker Compose']}
+          skills={['Python', 'Distributed Systems', 'Docker', 'Docker Compose']}
           links={[{'link': 'https://drive.google.com/drive/folders/1r2vc0GFLmUMr-iOZwwccKKrJfkeXe3B4?usp=drive_link', 'text': 'ACM Cloud Slides'},
                   {'link': 'https://github.com/SubramaniamSatyen/RPCDemo', 'text': 'RPC Demo'},
                   {'link': 'https://docs.google.com/document/d/1lz-736htMtZeV3krSLNeRRzxQcI3H0fHn87OdWKZwGI/edit?usp=sharing', 'text': 'Project Spec'}]}
+          showLogo={dimensions.width > INCLUDE_IMAGE_WIDTH}
+          logo={ACMCloud}
+          logoWidth='300'
         />  
       </div>
       <div className="postEntry">
@@ -109,6 +126,9 @@ function Projects({ dimensions }) {
           links={[{'link': 'https://github.com/uclaacm/hack-curriculum/tree/main/stackschool', 'text': 'Textbook'},
                   {'link': 'https://github.com/SubramaniamSatyen/WinterLearningStackschool', 'text': 'MERN Demo Repo'},
                   {'link': 'https://github.com/SubramaniamSatyen/Stackschool_2023_Cat_Server', 'text': 'REST API Demo Repo'}]}
+          showLogo={dimensions.width > INCLUDE_IMAGE_WIDTH}
+          logo={StackSchool}
+          logoWidth='300'
         />  
       </div>
       <h1 className='leftAlign'>Other Projects: </h1>
@@ -122,6 +142,9 @@ function Projects({ dimensions }) {
           to process speech data, construct a coherent internal representation of the digits spoken, and visualize the sum."
           skills={['Tensorflow', 'Python', 'Arduino', 'Pyfirmata']}
           links={[{'link': 'https://docs.google.com/presentation/d/1KfZw5EOzLQJrUtPOuc-XcVbb35R4j-Fn6mUgvgD-LCw/edit?usp=sharing', 'text': 'Slide Showcase'}]}
+          showLogo={dimensions.width > INCLUDE_IMAGE_WIDTH}
+          logo={Calc}
+          logoWidth='300'
         />  
       </div>
       <div className="postEntry">
@@ -144,6 +167,9 @@ function Projects({ dimensions }) {
             <p className='paragraphBlock'>
               Below are links to my work for UCLA's core computer science classes:
               <ul>
+                <li>
+                  CS 111 - Operating Systems: Assignments cover a range of reimplementing unix commands, optimizing at the OS level, and working with various system calls.
+                </li>
                 <li>
                   CS 35L - Software Construction: Assignments cover a range of programming frameworks and languages (Python, Lisp, React, etc.)
                   and culminate in designing a three tiered web application.
@@ -174,12 +200,12 @@ function Projects({ dimensions }) {
             <p className='paragraphBlock'>
               <h3>Resources:</h3>
             </p>
-            <a className="link" href="https://github.com/SubramaniamSatyen/CS111" target="_blank" rel="noreferrer"><ColorButton>CS 111 Repo</ColorButton></a>
-            <a className="link" href="https://github.com/SubramaniamSatyen/CS35L" target="_blank" rel="noreferrer"><ColorButton>CS 35L Repo</ColorButton></a>
-            <a className="link" href="https://github.com/hiimvincent/bruin-rides" target="_blank" rel="noreferrer"><ColorButton>CS 35L Project Repo</ColorButton></a>
-            <a className="link" href="https://github.com/SubramaniamSatyen/CS33" target="_blank" rel="noreferrer"><ColorButton>CS 33 Repo</ColorButton></a>
-            <a className="link" href="https://github.com/SubramaniamSatyen/CS32" target="_blank" rel="noreferrer"><ColorButton>CS 32 Repo</ColorButton></a>
-            <a className="link" href="https://github.com/SubramaniamSatyen/CS31" target="_blank" rel="noreferrer"><ColorButton>CS 31 Repo</ColorButton></a>
+            <a className="link" href="https://github.com/SubramaniamSatyen/CS111" target="_blank" rel="noreferrer"><ColorButton>CS 111 Repo&nbsp;<OpenInNewIcon/></ColorButton></a>
+            <a className="link" href="https://github.com/SubramaniamSatyen/CS35L" target="_blank" rel="noreferrer"><ColorButton>CS 35L Repo&nbsp;<OpenInNewIcon/></ColorButton></a>
+            <a className="link" href="https://github.com/hiimvincent/bruin-rides" target="_blank" rel="noreferrer"><ColorButton>CS 35L Project Repo&nbsp;<OpenInNewIcon/></ColorButton></a>
+            <a className="link" href="https://github.com/SubramaniamSatyen/CS33" target="_blank" rel="noreferrer"><ColorButton>CS 33 Repo&nbsp;<OpenInNewIcon/></ColorButton></a>
+            <a className="link" href="https://github.com/SubramaniamSatyen/CS32" target="_blank" rel="noreferrer"><ColorButton>CS 32 Repo&nbsp;<OpenInNewIcon/></ColorButton></a>
+            <a className="link" href="https://github.com/SubramaniamSatyen/CS31" target="_blank" rel="noreferrer"><ColorButton>CS 31 Repo&nbsp;<OpenInNewIcon/></ColorButton></a>
           </div>
         </div>
       </div>
