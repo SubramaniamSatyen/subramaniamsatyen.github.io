@@ -1,5 +1,6 @@
 import Chip from '@mui/material/Chip';
 import { ColorButton } from './ColorButton';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
 import '../App.css';
 
@@ -36,7 +37,7 @@ function PostBody({ blurb, accomplishments, skills, showLogo, logo, logoAlt, log
                 <div>
                     <h3>Resources:</h3>
                     {links.map((link) => <a className="link" href={link['link']} target="_blank" rel="noreferrer">
-                        <ColorButton>{link['text']}</ColorButton>
+                        <ColorButton>{link['text']}&nbsp;<OpenInNewIcon/></ColorButton>
                     </a>)}
                 </div>
             : null}
