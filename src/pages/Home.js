@@ -2,7 +2,7 @@ import '../App.css';
 
 import headshot from '../images/headshot_close.png';
 import { ColorButton, HighlightButton } from '../components/ColorButton';
-import { INCLUDE_IMAGE_WIDTH } from '../constants'
+import { INCLUDE_IMAGE_WIDTH, LINKED_IN_LINK, RESUME_LINK } from '../constants'
 
 function Home({ dimensions }) {
   return (
@@ -17,8 +17,8 @@ function Home({ dimensions }) {
             Click around to learn more about my interests, experience, and projects and feel free to reach out via LinkedIn or email.
           </p>
           <center>
-            <a className="link" href="https://drive.google.com/file/d/1VjcfIim_JKDFBlxNy9SjIkYPHs2LAdPB/view?usp=drive_link" target="_blank" rel="noreferrer"><HighlightButton>Resume</HighlightButton></a>
-            <a className="link" href="https://www.linkedin.com/in/satyen-sub" target="_blank" rel="noreferrer"><ColorButton>Connect With ME!</ColorButton></a>
+            <a className="link" href={RESUME_LINK} target="_blank" rel="noreferrer"><HighlightButton>Resume</HighlightButton></a>
+            <a className="link" href={LINKED_IN_LINK} target="_blank" rel="noreferrer"><ColorButton>Connect With ME!</ColorButton></a>
           </center>
         </div>
         <div className='columnTwoSmall rightAlign'>
@@ -38,8 +38,8 @@ function Home({ dimensions }) {
           Click around to learn more about my interests, experience, and projects and feel free to reach out via LinkedIn or email.
         </p>
         <center>
-          <a className="link" href="https://drive.google.com/file/d/1whVttEEa-8R6XshTWDPYeWmJl7K3joYu/view?usp=share_link" target="_blank" rel="noreferrer"><HighlightButton>Resume</HighlightButton></a>
-          <a className="link" href="https://www.linkedin.com/in/satyen-sub" target="_blank" rel="noreferrer"><ColorButton>Connect With ME!</ColorButton></a>
+          <a className="link" href={RESUME_LINK} target="_blank" rel="noreferrer"><HighlightButton>Resume</HighlightButton></a>
+          <a className="link" href={LINKED_IN_LINK} target="_blank" rel="noreferrer"><ColorButton>Connect With ME!</ColorButton></a>
         </center>
       </div>
       }
