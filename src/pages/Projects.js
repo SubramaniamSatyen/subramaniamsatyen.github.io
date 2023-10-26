@@ -46,7 +46,9 @@ function Projects({ dimensions }) {
                             'Configured visualization tool with SSL and custom domain using GoDaddy and AWS Route 53',
                             'Architected hosting for 3D point cloud LiDAR street visualizations using AWS S3']}
           skills={['React', 'Express.js', 'AWS S3', 'AWS EC2', 'AWS Elastic Beanstalk', 'AWS Route 53']}
-          links={[{'link': 'https://site.hspa.info/', 'text': 'View Site'}]}
+          links={[{'link': 'https://site.hspa.info/', 'text': 'HSPA Site'},
+                  {'link': 'https://drive.google.com/file/d/1vva4XtuSWtrcsaBBjzvu_F2UR0Y6hVsX/view?usp=sharing', 'text': 'SRI Certificate'},
+                  {'link': 'https://sri-lab.seas.ucla.edu/', 'text': 'SRI Lab Site'}]}
           showLogo={dimensions.width > INCLUDE_IMAGE_WIDTH}
           logo={SRI}
           logoWidth='200'
