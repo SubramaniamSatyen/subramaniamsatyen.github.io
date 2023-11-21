@@ -19,14 +19,17 @@ function Experience({ dimensions }) {
         />
         <PostBody
           blurb="Pacific Northwest National Laboratory (PNNL) is a leading center for scientific discovery in data analytics and for
-          technological innovation in sustainable energy and national security. PNNL is operated by Battelle and operates out of Richland,
-          Washington."
+          technological innovation in sustainable energy and national security. PNNL is operated by Battelle and fosters a wide breadth of 
+          engineering projects - I worked as a member of the MLE and Combined Ops team under the Software Engineering Architectures (SEA) group."
           accomplishments={
-            ['Produced Python unit tests for Pyspark codebase and integrate into Atlassian Bamboo CI/CD',
-            'Integrated automatic semantic versioning of custom python package code into ETL pipeline',
-            'Migrated development scale pipeline to AWS Glue and AWS EMR, with AWS Step Functions and Apache Oozie respectively for orchestration management, to evaluate viability as an alternative to Databricks pipeline']
+            ['Constructed pipeline for processing terabyte scale data using AWS services and Databricks',
+            'Produced Python unit tests for Pyspark codebase and integrated into Atlassian Bamboo CI/CD',
+            'Integrated automatic semantic versioning of custom python package code into data pipeline',
+            'Migrated development scale pipeline to AWS Glue and AWS EMR, with AWS Step Functions and Apache Oozie respectively for orchestration management',
+            'Conducted AWS Lambda performance analysis through the AWS CLI and refactored function to utilize AWS S3 Select functionality',
+            'Explored DataHub data catalog, aggregating schema lineage for cross platform data transformations along ETL pipeline']
           }
-          skills={['Python', 'AWS S3', 'AWS EC2', 'AWS Glue', 'AWS EMR', 'Databricks', 'Pyspark']}
+          skills={['Python', 'AWS S3', 'AWS EC2', 'AWS Lambda', 'AWS Glue', 'AWS EMR', 'Databricks', 'Pyspark', 'DataHub']}
           showLogo={dimensions.width > INCLUDE_IMAGE_WIDTH}
           logo={PNNL}
           logoAlt='PNNL Logo'
@@ -45,10 +48,12 @@ function Experience({ dimensions }) {
           payment from in-person and mail sources."
           accomplishments={
             ['Reduced billing portal load time by 90% by parallelizing SQL stored procedures and .NET API endpoints',
-            'Interfaced with Paymentus, CyberSource, and Elavon payment gateway APIs to facilitate customer payment',
+            'Securely interfaced with Paymentus, CyberSource, and Elavon payment gateway APIs to atomically facilitate customer payment to OLTP database',
+            'Leveraged C# to efficiently query Microsoft SQL Server database and balance payment across credit and debit fees on a shared invoice',
+            'Refactored and unified logic for automatic approval of property exemptions across internal billing system and customer portal by way of unifed API',
             'Developed API to streamline process of adding invoice entries to Microsoft SQL Server database and secured endpoints with bearer authentication token']
           }
-          skills={['SQL', 'ASP.NET', 'C#', 'JavaScript']}
+          skills={['SQL', 'ASP.NET', 'C#', 'JavaScript', 'Shell']}
           showLogo={dimensions.width > INCLUDE_IMAGE_WIDTH}
           logo={LAHD}
           logoAlt='LAHD Logo'
@@ -86,8 +91,9 @@ function Experience({ dimensions }) {
         />
         <PostBody
           blurb="Tutored C++ fundamentals one on one virtually over Zoom. Tutoring involved multiple hourly sessions and was divided into lecture and
-          practice. Preparation involved creating google slides, code examples, and practice questions and projects."
-          skills={['C++']}
+          practice, with monthly projects to demonstrate retention of skills. Preparation for lessons involved creating google slides, code examples, 
+          and practice questions and project template code."
+          skills={['C++', 'Data Structures', 'Algorithms', 'OOP']}
           links={[{'link': 'https://github.com/SubramaniamSatyen/C-Tutoring', 'text': 'Code Examples'},
                   {'link': 'https://drive.google.com/drive/folders/1GFDiLcw0kYhzz-oqBZ3PTXw3i8utoxOz?usp=drive_link', 'text': 'Slides'}]}
         />  
@@ -102,7 +108,7 @@ function Experience({ dimensions }) {
           and CS32: Introduction to Computer Science II. Prepared practice and lead weekly two hour long discussion sections, as well
           as career building workshops throughout quarter. Course curriculum covered fundamental topics like data structures, time complexity,
           object oriented design, and polymorphism."
-          skills={['C++']}
+          skills={['C++', 'Data Structures', 'Algorithms', 'OOP']}
           links={[{'link': 'https://web.cs.ucla.edu/classes/spring1d/cs31/syllabus.html', 'text': 'CS 31 Syllabus'},
                   {'link': 'https://web.cs.ucla.edu/classes/spring1d/cs32/syllabus.html', 'text': 'CS 32 Syllabus'},
                   {'link': 'https://github.com/SubramaniamSatyen/CS32_LA', 'text': 'CS 32 Practice Repo'}]}

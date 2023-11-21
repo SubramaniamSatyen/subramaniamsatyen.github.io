@@ -31,9 +31,11 @@ function Projects({ dimensions }) {
           growing complexity of big data, and the increased sophistication of analytics that can be used to extract patterns
            and trends from the data."
           accomplishments={['Evaluated efficacy of large language models in computation scenarios by sourcing college-level scientific problems',
+                            'Extracted keyword and equations for model training, and computational questions using optical recognition tools',
                             'Summarize accuracy of NLP model in paper by classifying incorrect predictions into 10 error categories']}
-          skills={['Python', 'NLP']}
-          links={[{'link': 'https://drive.google.com/file/d/1p2c0Z70m9Td4RDMVzSrBRpAb2kBcJ4Hc/view?usp=sharing', 'text': 'Read Paper'}]}
+          skills={['Python', 'Shell', 'NLP']}
+          links={[{'link': 'https://drive.google.com/file/d/1p2c0Z70m9Td4RDMVzSrBRpAb2kBcJ4Hc/view?usp=sharing', 'text': 'Read Paper'},
+                  {'link': 'https://github.com/mandyyyyii/scibench/tree/main', 'text': 'Benchmark Repo'}]}
           showLogo={dimensions.width > INCLUDE_IMAGE_WIDTH}
           logo={ScAI}
           logoWidth='200'
@@ -68,9 +70,10 @@ function Projects({ dimensions }) {
           text='ACM Hack - HackCloud'
         />
         <PostBody
-          blurb="ACM Hack's HackCloud is a quarter long workshop series exploring the field of cloud computing, the modern backbone for 
-          designing and deploying highly scalable, reliable, and available software services. For UCLA ACM's first time ever, ACM Hack 
-          dived into cloud fundamentals and best practices, tying the concepts into practical hands-on demos with Amazon Web Services."
+          blurb="ACM Hack's HackCloud is a weekly, two hour long workshop series exploring the field of cloud computing, the modern 
+          backbone for designing and deploying highly scalable, reliable, and available software services. For UCLA ACM's first time 
+          ever, ACM Hack dived into cloud fundamentals and best practices, tying the concepts into practical hands-on demos with Amazon 
+          Web Services. Topics discussed include the following: <li>VM Computing|Serverless Services|DevOps|Continuous Integration and Continuous Deployment|dzMachine Learning<li>"
           skills={['React', 'AWS S3', 'AWS EC2', 'AWS Lambda', 'Docker', 'AWS Code Deploy', 'AWS Code Pipeline']}
           links={[{'link': 'https://github.com/uclaacm/hack-curriculum/tree/main/HackCloud', 'text': 'HackCloud Repo'},
                   {'link': 'https://youtube.com/playlist?list=PLPO7_kXilXFYP3nE3MfFmMg2BU9R4cKUu&si=9UvMDZ-xwLnKn8Do', 'text': 'Workshop Recordings'},
@@ -88,8 +91,9 @@ function Projects({ dimensions }) {
         <PostBody
           blurb="ACM Hack's HackFam is a mentorship program hosted by ACM Hack's officer team. Each Hack Family is led by two
           fam heads and manages 15 to 20 students, offering social, academic, and career building advice and events
-          throughout the course of the quarter."
-          skills={['React']}
+          throughout the course of the quarter. Under my leadership, students participated in a year long full stack mobile development
+          project using React Native and Expo for a cross platform UI, and firebase for persistent storage of images and user data."
+          skills={['React', 'React Native', 'Firebase']}
           links={[{'link': 'https://hack.uclaacm.com/', 'text': 'ACM Hack Site'}]}
           showLogo={dimensions.width > INCLUDE_IMAGE_WIDTH}
           logo={HackFam}
