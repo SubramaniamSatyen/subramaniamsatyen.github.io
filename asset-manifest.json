@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e5ff3bf8.css",
-    "main.js": "/static/js/main.7821f9c8.js",
+    "main.js": "/static/js/main.f8d344c8.js",
     "static/js/787.931bac78.chunk.js": "/static/js/787.931bac78.chunk.js",
     "static/media/Calculator.png": "/static/media/Calculator.e37d8657f24d95187984.png",
     "static/media/StackSchool.png": "/static/media/StackSchool.8a8831a3c11342ac51d1.png",
@@ -15,11 +15,11 @@
     "static/media/Bond_Logo.png": "/static/media/Bond_Logo.a267e506db13568f8cfb.png",
     "index.html": "/index.html",
     "main.e5ff3bf8.css.map": "/static/css/main.e5ff3bf8.css.map",
-    "main.7821f9c8.js.map": "/static/js/main.7821f9c8.js.map",
+    "main.f8d344c8.js.map": "/static/js/main.f8d344c8.js.map",
     "787.931bac78.chunk.js.map": "/static/js/787.931bac78.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e5ff3bf8.css",
-    "static/js/main.7821f9c8.js"
+    "static/js/main.f8d344c8.js"
   ]
 }
