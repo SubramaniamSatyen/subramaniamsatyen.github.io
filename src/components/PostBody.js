@@ -6,12 +6,16 @@ import '../App.css';
 
 import React from 'react'
 
+function format(text){
+    return text.split("<li>").map((val, i) => i % 2 == 0 ? val : <ul>{val.split("|").map((item) => <li>{item}</li>)}</ul>);
+}
+
 function PostBody({ blurb, accomplishments, skills, showLogo, logo, logoAlt, logoWidth, logoHeight, links }) {
     return (
         <div className='row'>
           <div>
             <p className='paragraphBlock'>
-              {blurb}
+              {format(blurb)}
             </p>
             {accomplishments && accomplishments.length > 0 ? 
             <div>

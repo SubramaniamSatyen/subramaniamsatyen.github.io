@@ -161,53 +161,25 @@ function Projects({ dimensions }) {
         />  
       </div>
       <div className="postEntry">
-        <h2 id='class-projects'><a href='#class-projects'>Class Projects</a></h2>
-        <div className='row'>
-          <div>
-            <p className='paragraphBlock'>
-              Below are links to my work for UCLA's core computer science classes:
-              <ul>
-                <li>
-                  CS 111 - Operating Systems: Assignments cover a range of reimplementing unix commands, optimizing at the OS level, and working with various system calls.
-                </li>
-                <li>
-                  CS 35L - Software Construction: Assignments cover a range of programming frameworks and languages (Python, Lisp, React, etc.)
-                  and culminate in designing a three tiered web application.
-                </li>
-                <li>
-                  CS 33 - Computer Architecture: Assignments cover code tracing through x86-64 machine language code, thread level parallelism,
-                  synchronization, and virtual memory.
-                </li>
-                <li>
-                  CS 32 - Introduction to Computer Science II: Assignments test sorting, recursion, time complexity, polymorphism, and advanced data structures. 
-                </li>
-                <li>
-                  CS 31 - Introduction to Computer Science I: Assignments test control flow, arrays, pointers, and classes. 
-                </li>
-              </ul>
-            </p>
-            <p className='paragraphBlock'>
-              <h3>Skills:</h3>
-            </p>
-            <div>
-              <Chip label="C++" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
-              <Chip label="C" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
-              <Chip label="Python" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
-              <Chip label="React" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
-              <Chip label="Lisp" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
-              <Chip label="MongoDB" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
-            </div>
-            <p className='paragraphBlock'>
-              <h3>Resources:</h3>
-            </p>
-            <a className="link" href="https://github.com/SubramaniamSatyen/CS111" target="_blank" rel="noreferrer"><ColorButton>CS 111 Repo&nbsp;<OpenInNewIcon/></ColorButton></a>
-            <a className="link" href="https://github.com/SubramaniamSatyen/CS35L" target="_blank" rel="noreferrer"><ColorButton>CS 35L Repo&nbsp;<OpenInNewIcon/></ColorButton></a>
-            <a className="link" href="https://github.com/hiimvincent/bruin-rides" target="_blank" rel="noreferrer"><ColorButton>CS 35L Project Repo&nbsp;<OpenInNewIcon/></ColorButton></a>
-            <a className="link" href="https://github.com/SubramaniamSatyen/CS33" target="_blank" rel="noreferrer"><ColorButton>CS 33 Repo&nbsp;<OpenInNewIcon/></ColorButton></a>
-            <a className="link" href="https://github.com/SubramaniamSatyen/CS32" target="_blank" rel="noreferrer"><ColorButton>CS 32 Repo&nbsp;<OpenInNewIcon/></ColorButton></a>
-            <a className="link" href="https://github.com/SubramaniamSatyen/CS31" target="_blank" rel="noreferrer"><ColorButton>CS 31 Repo&nbsp;<OpenInNewIcon/></ColorButton></a>
-          </div>
-        </div>
+        <PostHeader 
+          id='class-projects' 
+          text='Class Projects'
+        />
+        <PostBody
+          blurb="Below are links to my work for UCLA's undergraduate computer science classes: <li>CS 111 - Operating Systems: Assignments cover a range of 
+          reimplementing unix commands, optimizing at the OS level, and working with various system calls.|CS 35L - Software Construction: Assignments 
+          cover a range of programming frameworks and languages (Python, Lisp, React, etc.) and culminate in designing a three tiered web application.|
+          CS 33 - Computer Architecture: Assignments cover code tracing through x86-64 machine language code, thread level parallelism, synchronization, 
+          and virtual memory.|CS 32 - Introduction to Computer Science II: Assignments test sorting, recursion, time complexity, polymorphism, and 
+          advanced data structures.|CS 31 - Introduction to Computer Science I: Assignments test control flow, arrays, pointers, and classes.<li>"
+          skills={['C++', "C", "Python", "React", "Lisp", "MongoDB"]}
+          links={[{'link': "https://github.com/SubramaniamSatyen/CS111", 'text': "CS 111 Repo"},
+                  {'link': "https://github.com/SubramaniamSatyen/CS35L", 'text': "CS 35L Repo"},
+                  {'link': "https://github.com/hiimvincent/bruin-rides", 'text': "CS 35L Project Repo"},
+                  {'link': "https://github.com/SubramaniamSatyen/CS33", 'text': "CS 33 Repo"},
+                  {'link': "https://github.com/SubramaniamSatyen/CS32", 'text': "CS 32 Repo"},
+                  {'link': "https://github.com/SubramaniamSatyen/CS31", 'text': "CS 31 Repo"}]}
+        />
       </div>
     </div>
   );
