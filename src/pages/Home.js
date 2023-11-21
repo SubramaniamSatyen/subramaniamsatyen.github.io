@@ -12,7 +12,7 @@ function Home({ dimensions }) {
         <div className='columnTwo leftAlign heroText'>
           <h1>Hello, I'm Satyen Subramaniam!</h1>
           <p className='textBlock'>
-            I'm interested in <span className='highlight'>&nbsp;Software Engineering</span>,
+            I'm interested in<span className='highlight'>&nbsp;Full-Stack Development</span>,
             <span className='highlight'>&nbsp;Cloud Computing</span>, and<span className='highlight'>&nbsp;Machine Learning</span>!
             Click around to learn more about my interests, experience, and projects and feel free to reach out via LinkedIn or email.
           </p>
