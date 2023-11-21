@@ -10,6 +10,13 @@ import {INCLUDE_IMAGE_WIDTH} from '../constants';
 import '../App.css';
 
 function Awards({ dimensions }) {
+  const platforms = ["AWS S3", "AWS EC2", "AWS Lambda", "AWS Glue", "AWS EMR",  "AWS Elastic Beanstalk", "AWS Route 53", "AWS Lambda", "DataHub",
+                    "Looker", "GCP BigQuery", "GCP Cloud Run", "GCP App Engine", "Databricks", "Firebase", "MongoDB"]
+  const frameworks_tools = ["Docker", "Docker Compose", "TensorFlow", "SciKit Learn", "PyTorch", "Pyspark", "Apache Spark", 
+                            "Linux", "Arduino", "ASP.NET", "Express.js"]
+  const concepts = ["Data Structures", "Algorithms", "OOP", "Cloud Computing", "Distributed Systems", "Machine Learning", "AI", "NLP"]
+  const languages = ["Python", "C++", "C", "C#", "JavaScript", "React", "React Native", "TypeScript",  "SQL", "Lisp"]  
+
   return (
     <div className="App application">
       <h1 className='leftAlign'>Awards</h1>
@@ -83,39 +90,33 @@ function Awards({ dimensions }) {
         />  
       </div>
       <h1 className='leftAlign'>Skills</h1>
-      <div className="postEntry paddingTop">
-        <Chip label="Python" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
-        <Chip label="Tensorflow" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
-        <Chip label="SciKit Learn" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
-        <Chip label="NLP" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
-        <Chip label="AWS S3" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
-        <Chip label="AWS EC2" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
-        <Chip label="AWS Glue" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
-        <Chip label="AWS EMR" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
-        <Chip label="AWS Elastic Beanstalk" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
-        <Chip label="AWS Route 53" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
-        <Chip label="AWS Lambda" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
-        <Chip label="Looker" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
-        <Chip label="GCP BigQuery" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
-        <Chip label="GCP App Engine" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
-        <Chip label="Docker" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
-        <Chip label="Docker Compose" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
-        <Chip label="Distributed Systems" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
-        <Chip label="Arduino" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
-        <Chip label="Databricks" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
-        <Chip label="Pyspark" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
-        <Chip label="C++" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
-        <Chip label="C" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
-        <Chip label="React" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
-        <Chip label="Express.js" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} /> 
-        <Chip label="React Native" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
-        <Chip label="Typescript" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
-        <Chip label="JavaScript" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
-        <Chip label="Firebase" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
-        <Chip label="SQL" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
-        <Chip label="ASP.NET" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
-        <Chip label="Lisp" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
-        <Chip label="MongoDB" className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />
+      <div className="postEntry">
+        <PostHeader 
+          id='platforms' 
+          text='Platforms'
+        />
+        {platforms.map((name) => <Chip label={name} className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />)}
+      </div>
+      <div className="postEntry">
+        <PostHeader 
+          id='frameworks' 
+          text='Frameworks and Tools'
+        />
+        {frameworks_tools.map((name) => <Chip label={name} className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />)}
+      </div>
+      <div className="postEntry">
+        <PostHeader 
+          id='concepts' 
+          text='Concepts'
+        />
+        {concepts.map((name) => <Chip label={name} className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />)}
+      </div>
+      <div className="postEntry">
+        <PostHeader 
+          id='languages' 
+          text='Languages'
+        />
+        {languages.map((name) => <Chip label={name} className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />)}
       </div>
     </div>
   );
