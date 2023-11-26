@@ -1,6 +1,6 @@
 import '../App.css';
 
-import headshot from '../images/headshot_close.png';
+import headshot from '../images/headshot_2.jpg';
 import { ColorButton, HighlightButton } from '../components/ColorButton';
 import { INCLUDE_IMAGE_WIDTH, LINKED_IN_LINK, RESUME_LINK } from '../constants'
 
