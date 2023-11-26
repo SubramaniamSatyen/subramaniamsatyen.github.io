@@ -95,28 +95,36 @@ function Awards({ dimensions }) {
           id='platforms' 
           text='Platforms'
         />
-        {platforms.map((name) => <Chip label={name} className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />)}
+        <div className='skillList'>
+          {platforms.map((name) => <Chip label={name} className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />)}
+        </div>
       </div>
       <div className="postEntry">
         <PostHeader 
           id='frameworks' 
           text='Frameworks and Tools'
         />
-        {frameworks_tools.map((name) => <Chip label={name} className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />)}
+        <div className='skillList'>
+          {frameworks_tools.map((name) => <Chip label={name} className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />)}
+        </div>
       </div>
       <div className="postEntry">
         <PostHeader 
           id='concepts' 
           text='Concepts'
         />
-        {concepts.map((name) => <Chip label={name} className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />)}
+        <div className='skillList'>
+          {concepts.map((name) => <Chip label={name} className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />)}
+        </div>
       </div>
       <div className="postEntry">
         <PostHeader 
           id='languages' 
           text='Languages'
         />
-        {languages.map((name) => <Chip label={name} className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />)}
+        <div className='skillList'>
+          {languages.map((name) => <Chip label={name} className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />)}
+        </div>
       </div>
     </div>
   );

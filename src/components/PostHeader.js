@@ -9,8 +9,8 @@ function PostHeader({ id, text }) {
     const location = useLocation();
 
     return (
-        <h2 id={id} onClick={() => {navigator.clipboard.writeText(window.location.origin + location.pathname + '#' + id)}}>
-            <a href={'#' + id} >{text}<LinkIcon className='linkIcon'/></a>
+        <h2 className="postHeader" id={id} onClick={() => {navigator.clipboard.writeText(window.location.origin + location.pathname + '#' + id)}}>
+            <a href={'#' + id} >{text}<div className='linkIcon'><LinkIcon/></div></a>
         </h2>
     );
 }

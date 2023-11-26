@@ -194,4 +194,13 @@ h3 {
 .linkIcon {
   padding-left: 8px;
   opacity: 0.5;
+  display: none;
+}
+
+.postHeader {
+  display: inline-block; 
+}
+
+.postHeader:hover .linkIcon {
+  display: inline-block;
 }
