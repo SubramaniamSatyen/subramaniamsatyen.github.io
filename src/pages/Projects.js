@@ -13,6 +13,8 @@ import ACMCloud from '../images/ACMCloud.png';
 import StackSchool from '../images/StackSchool.png';
 import HackFam from '../images/HackFam.png';
 import Calc from '../images/Calculator.png';
+import ProjectQuest from '../images/Project_Quest.png';
+import ReactWithMe from '../images/ReactWithMe.png';
 
 import '../App.css';
 
@@ -160,6 +162,9 @@ function Projects({ dimensions }) {
           blurb="A mobile app created with a team of four UCLA students during the course of a quarter: ReactWithMe. Our app allows users to 
           add timestamped reactions when watching a video, then share those reactions so friends can see you react in real time as they
           watch the same content. The app was created using firebase for persistent storage and React Native for our UI."
+          showLogo={dimensions.width > INCLUDE_IMAGE_WIDTH}
+          logo={ReactWithMe}
+          logoWidth='150'
           skills={['React Native', 'Firebase']}
           links={[{'link': 'https://github.com/SubramaniamSatyen/HackSpace2022', 'text': 'GitHub Repo'}]}
         />  
@@ -184,6 +189,25 @@ function Projects({ dimensions }) {
                   {'link': "https://github.com/SubramaniamSatyen/CS32", 'text': "CS 32 Repo"},
                   {'link': "https://github.com/SubramaniamSatyen/CS31", 'text': "CS 31 Repo"}]}
         />
+      </div>
+      <div className="postEntry">
+        <PostHeader 
+          id='projectquest' 
+          text='Project Quest'
+        />
+        <PostBody
+          blurb="Project Quest is 3D, adventure RPG with a 16-bit art style, prominently featuring problem solving and strategy puzzles. Players begin by 
+          controlling the character of Ben, a first year TSA member, but later manage a larger party of diverse characters. After losing his Video Game 
+          Design TSA project in an accident, Ben and his friends must search through four expansive and distinct levels to find the project before it's 
+          too late! Throughout the game, players can interact with their environment to acquire coins, items, and weapons. Players can also visit the TSA 
+          shop to acquire more gear for coins. Enemies are present in each level, including mini-bosses, as well an fully-fledged final bosses.          "
+          skills={['C#']}
+          showLogo={dimensions.width > INCLUDE_IMAGE_WIDTH}
+          logo={ProjectQuest}
+          logoWidth='400'
+          links={[{'link': 'https://subramaniamsatyen.itch.io/project-quest', 'text': 'Game Download'},
+                  {'link': 'https://drive.google.com/file/d/1Q9eihl2peHomRecCK1Em3EQCI1mR5XPf/view?usp=sharing', 'text': 'Documentation'}]}
+        />  
       </div>
     </div>
   );
