@@ -50,7 +50,7 @@ function Experience({ dimensions }) {
             ['Reduced billing portal load time by 90% by parallelizing SQL stored procedures and .NET API endpoints',
             'Securely interfaced with Paymentus, CyberSource, and Elavon payment gateway APIs to atomically facilitate customer payment to OLTP database',
             'Leveraged C# to efficiently query Microsoft SQL Server database and balance payment across credit and debit fees on a shared invoice',
-            'Refactored and unified logic for automatic approval of property exemptions across internal billing system and customer portal by way of unifed API',
+            'Refactored and unified logic for automatic approval of property exemptions across internal billing system and customer portal by way of unified API',
             'Developed API to streamline process of adding invoice entries to Microsoft SQL Server database and secured endpoints with bearer authentication token']
           }
           skills={['SQL', 'ASP.NET', 'C#', 'JavaScript', 'Shell']}
