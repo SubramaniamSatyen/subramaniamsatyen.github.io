@@ -72,11 +72,13 @@ function Experience({ dimensions }) {
           accomplishments={
             ['Predicted bond price with mean absolute error of less than 5 cents with TensorFlow deep learning regression and forecasting models',
             'Classified bond rating and risk with TensorFlow Boosted Trees models',
-            'Generated recommendations for user-specific preferences on Looker using Sci-kit-Learn agglomerative clustering model for grouping and Google Forms and BigQuery to persist user interests',
-            'Aggregated access to previously developed microservices within Looker by constructing React extension',
-            'Assembled RESTful quant API service on Google Cloud Run to query BigQuery data, fetch calculated values from API, and visualize content with JavaScript on Looker dashboard']
+            'Generated recommendations for user-specific preferences on Looker using SciKit Learn agglomerative clustering model for grouping and Google Forms and BigQuery to persist user interests',
+            'Aggregated access to developed microservices within Looker by constructing React extension',
+            'Assembled RESTful quant API service on Google Cloud Run to query BigQuery data, fetch calculated values from API, and visualize content with JavaScript on Looker dashboard',
+            'Developed internal SciKit Learn and TensorFlow machine learning teaching resources and documentation']
           }
           skills={['Tensorflow', 'SciKit Learn', 'React', 'Typescript', 'Looker', 'GCP BigQuery', 'GCP App Engine']}
+          links={[{'link': 'https://github.com/SubramaniamSatyen/BondMLWorkshops', 'text': 'ML Documentation'}]}
           showLogo={dimensions.width > INCLUDE_IMAGE_WIDTH}
           logo={Bond}
           logoAlt='Bond Intelligence Logo'
