@@ -7,9 +7,11 @@ import '../App.css';
 import React from 'react'
 
 function format(text){
-    return text.split("<li>").map((val, i) => i % 2 == 0 ? val : <ul>{val.split("|").map((item) => <li>{item}</li>)}</ul>);
+    if (text != undefined){
+        return text.split("<li>").map((val, i) => i % 2 == 0 ? val : <ul>{val.split("|").map((item) => <li>{item}</li>)}</ul>);
+    }
+    return "";
 }
-
 function PostBody({ blurb, accomplishments, skills, showLogo, logo, logoAlt, logoWidth, logoHeight, links }) {
     return (
         <div className='row'>
