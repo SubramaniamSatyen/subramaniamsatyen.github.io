@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a03617df.css",
-    "main.js": "/static/js/main.c824081d.js",
+    "main.js": "/static/js/main.99e6f4bc.js",
     "static/js/787.931bac78.chunk.js": "/static/js/787.931bac78.chunk.js",
     "static/media/Calculator.png": "/static/media/Calculator.e37d8657f24d95187984.png",
     "static/media/headshot_2.jpg": "/static/media/headshot_2.db8094c673365aa05579.jpg",
@@ -17,11 +17,11 @@
     "static/media/Bond_Logo.png": "/static/media/Bond_Logo.a267e506db13568f8cfb.png",
     "index.html": "/index.html",
     "main.a03617df.css.map": "/static/css/main.a03617df.css.map",
-    "main.c824081d.js.map": "/static/js/main.c824081d.js.map",
+    "main.99e6f4bc.js.map": "/static/js/main.99e6f4bc.js.map",
     "787.931bac78.chunk.js.map": "/static/js/787.931bac78.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a03617df.css",
-    "static/js/main.c824081d.js"
+    "static/js/main.99e6f4bc.js"
   ]
 }
