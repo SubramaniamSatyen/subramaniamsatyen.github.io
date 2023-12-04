@@ -21,7 +21,7 @@ import '../App.css';
 function Projects({ dimensions }) {
   return (
     <div className="App application">
-      <h1 className='leftAlign'>Research Projects: </h1>
+      <h1 className='leftAlign title'>Research Projects</h1>
       <div className="postEntry">
         <PostHeader 
           id='ucla-scalable-analytics-institute' 
@@ -65,7 +65,7 @@ function Projects({ dimensions }) {
           logoWidth='200'
         />  
       </div>
-      <h1 className='leftAlign'>Club Projects: </h1>
+      <h1 className='leftAlign title'>Club Projects: </h1>
       <div className="postEntry">
         <PostHeader 
           id='hackcloud' 
@@ -137,7 +137,7 @@ function Projects({ dimensions }) {
           logoWidth='300'
         />  
       </div>
-      <h1 className='leftAlign'>Other Projects: </h1>
+      <h1 className='leftAlign title'>Other Projects: </h1>
       <div className="postEntry">
         <PostHeader 
           id='voice-activated-calculator' 

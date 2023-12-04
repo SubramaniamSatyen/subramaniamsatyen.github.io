@@ -11,7 +11,7 @@ import PostBody from '../components/PostBody';
 function Experience({ dimensions }) {
   return (
     <div className="App application">
-      <h1 className='leftAlign'>Work Experience: </h1>
+      <h1 className='leftAlign title'>Work Experience</h1>
       <div className="postEntry">
         <PostHeader 
           id='pnnl' 
@@ -85,7 +85,7 @@ function Experience({ dimensions }) {
           logoHeight='90'
         />
       </div>
-      <h1 className='leftAlign'>Teaching Experience: </h1>
+      <h1 className='leftAlign title'>Teaching Experience: </h1>
       <div className="postEntry">
         <PostHeader 
           id='wyzant' 

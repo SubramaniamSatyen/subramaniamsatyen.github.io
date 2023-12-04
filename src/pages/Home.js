@@ -9,7 +9,7 @@ function Home({ dimensions }) {
     <div className="App application">
       {dimensions.width > INCLUDE_IMAGE_WIDTH ? 
       <div className="rowTwo">
-        <div className='columnTwo leftAlign heroText'>
+        <div className='columnTwo leftAlign heroText title'>
           <h1>Hello, I'm Satyen Subramaniam!</h1>
           <p className='textBlock'>
             I'm interested in<span className='highlight'>&nbsp;Full-Stack Development</span>,
@@ -30,7 +30,7 @@ function Home({ dimensions }) {
           ></img>
         </div>
       </div> : 
-      <div className='mobileHero heroText'>
+      <div className='mobileHero heroText title'>
         <h1>Hello, I'm Satyen Subramaniam!</h1>
         <p className='textBlock'>
           I'm interested in <span className='highlight'>&nbsp;Software Engineering</span>,

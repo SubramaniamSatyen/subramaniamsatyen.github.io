@@ -19,7 +19,7 @@ function Awards({ dimensions }) {
 
   return (
     <div className="App application">
-      <h1 className='leftAlign'>Awards</h1>
+      <h1 className='leftAlign title'>Awards</h1>
       <div className="postEntry">
         <PostHeader 
           id='saa-c02' 
@@ -89,14 +89,14 @@ function Awards({ dimensions }) {
           links={[{'link': 'https://tbp.seas.ucla.edu/', 'text': 'UCLA TBP'}]}  
         />  
       </div>
-      <h1 className='leftAlign'>Skills</h1>
+      <h1 className='leftAlign title'>Skills</h1>
       <div className="postEntry">
         <PostHeader 
           id='platforms' 
           text='Platforms'
         />
         <div className='skillList'>
-          {platforms.map((name) => <Chip label={name} className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />)}
+          {platforms.map((name) => <Chip label={name} className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400, boxShadow: '0 3px 3px rgb(0 0 0 / 0.2)'}} />)}
         </div>
       </div>
       <div className="postEntry">
@@ -105,7 +105,7 @@ function Awards({ dimensions }) {
           text='Frameworks and Tools'
         />
         <div className='skillList'>
-          {frameworks_tools.map((name) => <Chip label={name} className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />)}
+          {frameworks_tools.map((name) => <Chip label={name} className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400, boxShadow: '0 3px 3px rgb(0 0 0 / 0.2)'}} />)}
         </div>
       </div>
       <div className="postEntry">
@@ -114,7 +114,7 @@ function Awards({ dimensions }) {
           text='Concepts'
         />
         <div className='skillList'>
-          {concepts.map((name) => <Chip label={name} className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />)}
+          {concepts.map((name) => <Chip label={name} className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400, boxShadow: '0 3px 3px rgb(0 0 0 / 0.2)'}} />)}
         </div>
       </div>
       <div className="postEntry">
@@ -123,7 +123,7 @@ function Awards({ dimensions }) {
           text='Languages'
         />
         <div className='skillList'>
-          {languages.map((name) => <Chip label={name} className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400}} />)}
+          {languages.map((name) => <Chip label={name} className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400, boxShadow: '0 3px 3px rgb(0 0 0 / 0.2)'}} />)}
         </div>
       </div>
     </div>

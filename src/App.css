@@ -116,6 +116,7 @@ h3 {
 .headshot {
   border-radius: 10px;
   margin-left: 4vw;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
 }
 
 .row {
@@ -127,6 +128,7 @@ h3 {
 
 .postEntry {
   background-color: var(--background-secondary);
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
   margin-left: 8vw;
   margin-right: 8vw;
   margin-bottom: 5vh;
@@ -199,6 +201,10 @@ h3 {
 
 .postHeader {
   display: inline-block; 
+}
+
+.title {
+  text-shadow: 5px 5px 10px rgb(0 0 0 / 0.4);
 }
 
 .postHeader:hover .linkIcon {
