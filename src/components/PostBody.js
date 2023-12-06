@@ -12,7 +12,7 @@ function format(text){
     }
     return "";
 }
-function PostBody({ blurb, accomplishments, skills, showLogo, logo, logoAlt, logoWidth, logoHeight, links }) {
+function PostBody({ blurb, accomplishments, skills, showLogo, logo, noStyle, logoAlt, logoWidth, logoHeight, links }) {
     return (
         <div className='row'>
           <div>
@@ -50,7 +50,7 @@ function PostBody({ blurb, accomplishments, skills, showLogo, logo, logoAlt, log
           </div>
           {logo && showLogo ? 
           <div className='logo' >
-            <img className='logoImage' alt={logoAlt} src={logo} width={logoWidth} height={logoHeight} />
+            <img className={typeof(noStyle) !== 'undefined' && noStyle != null ? "" : 'logoImage'} alt={logoAlt} src={logo} width={logoWidth} height={logoHeight} />
           </div>
           : null }
         </div>

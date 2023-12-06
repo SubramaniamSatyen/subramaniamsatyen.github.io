@@ -32,6 +32,7 @@ function Awards({ dimensions }) {
           links={[{'link': 'https://drive.google.com/file/d/1X_t5qzVTFdNMWExGCYOK-L3hkmZHaeSb/view?usp=sharing', 'text': 'View Certification'}]}  
           showLogo={dimensions.width > INCLUDE_IMAGE_WIDTH}
           logo={AWS}
+          noStyle={false}
           logoWidth='180'
         />  
       </div>
