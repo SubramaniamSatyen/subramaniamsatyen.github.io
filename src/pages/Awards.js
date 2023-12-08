@@ -1,4 +1,4 @@
-import { Chip } from '@mui/material';
+import SkillChip from '../components/SkillChip';
 import PostBody from '../components/PostBody';
 import PostHeader from '../components/PostHeader';
 
@@ -97,7 +97,7 @@ function Awards({ dimensions }) {
           text='Platforms'
         />
         <div className='skillList'>
-          {platforms.map((name) => <Chip label={name} className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400, boxShadow: '0 3px 3px rgb(0 0 0 / 0.2)'}} />)}
+          {platforms.map((name) => <SkillChip name={name} />)}
         </div>
       </div>
       <div className="postEntry">
@@ -106,7 +106,7 @@ function Awards({ dimensions }) {
           text='Frameworks and Tools'
         />
         <div className='skillList'>
-          {frameworks_tools.map((name) => <Chip label={name} className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400, boxShadow: '0 3px 3px rgb(0 0 0 / 0.2)'}} />)}
+          {frameworks_tools.map((name) => <SkillChip name={name} />)}
         </div>
       </div>
       <div className="postEntry">
@@ -115,7 +115,7 @@ function Awards({ dimensions }) {
           text='Concepts'
         />
         <div className='skillList'>
-          {concepts.map((name) => <Chip label={name} className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400, boxShadow: '0 3px 3px rgb(0 0 0 / 0.2)'}} />)}
+          {concepts.map((name) => <SkillChip name={name} />)}
         </div>
       </div>
       <div className="postEntry">
@@ -124,7 +124,7 @@ function Awards({ dimensions }) {
           text='Languages'
         />
         <div className='skillList'>
-          {languages.map((name) => <Chip label={name} className="skill" style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400, boxShadow: '0 3px 3px rgb(0 0 0 / 0.2)'}} />)}
+          {languages.map((name) => <SkillChip name={name} />)}
         </div>
       </div>
     </div>
