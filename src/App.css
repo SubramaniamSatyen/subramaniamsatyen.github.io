@@ -230,7 +230,7 @@ h3 {
 }
 
 .title {
-  text-shadow: 5px 5px 10px rgb(0 0 0 / 0.4);
+  text-shadow: 5px 5px 10px rgb(0 0 0 / 0.7);
 }
 
 .postHeader:hover .linkIcon {
@@ -258,6 +258,7 @@ h3 {
   font-weight: 400;
   font-family: "Segoe UI";
   margin-bottom: 2px;
+  text-shadow: 5px 5px 10px rgb(0 0 0 / 0.5);
 }
 
 .timelineLocation {
@@ -265,4 +266,5 @@ h3 {
   font-weight: 400;
   font-family: "Segoe UI";
   font-style: italic;
+  text-shadow: 5px 5px 10px rgb(0 0 0 / 0.5);
 }
