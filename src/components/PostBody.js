@@ -1,4 +1,4 @@
-import Chip from '@mui/material/Chip';
+import SkillChip from './SkillChip';
 import { ColorButton } from './ColorButton';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
@@ -31,11 +31,7 @@ function PostBody({ blurb, accomplishments, skills, showLogo, logo, noStyle, log
             <div>
                 <h3>Skills:</h3>
                 <div>
-                    {skills.map((skill) => <Chip 
-                                    label={skill} 
-                                    className="skill" 
-                                    style={{backgroundColor:'var(--dark-secondary)', fontSize: '1em', color: 'var(--background-highlight)', fontWeight: 400, boxShadow: '0 3px 3px rgb(0 0 0 / 0.2)'}} 
-                                />)}
+                    {skills.map((skill) => <SkillChip name={skill} />)}
                 </div>
             </div>
             : null}
