@@ -10,6 +10,16 @@ import TimelineOppositeContent, { timelineOppositeContentClasses } from '@mui/la
 import { MOBILE_THRESHOLD } from '../constants';
 import Post from './Post';
 
+const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
+
+function sortByDate(a, b){
+  if (a.end == b.end){
+    return (a.start > b.start ? -1 : 1);
+  }
+
+  return (a.end > b.end ? -1 : 1);
+}
+
 export default function PostTimeline({ posts, dimensions }) {
   return (
     <div>
@@ -17,23 +27,23 @@ export default function PostTimeline({ posts, dimensions }) {
       (<Timeline
         sx={{
           [`& .${timelineOppositeContentClasses.root}`]: {
-            flex: '0 0 90px',
-            paddingLeft: '5vw',
-            fontSize: '1.1em',
-            fontWeight: 100,
+            flex: '0 0 170px',
+            paddingLeft: '3.5vw',
           },
-          // [`& .${timelineConnectorClasses.root}`]: {
-          //   boxShadow: "5px 5px 100px rgb(0 0 0)"
-          // },
-          // [`& .${timelineSeparatorClasses.root}`]: {
-          //   boxShadow: "5px 5px 100px rgb(0 0 0)"
-          // }
         }}
       >
-        {posts.map(post => 
+        {posts.sort(sortByDate).map(post => 
           <TimelineItem>
             <TimelineOppositeContent>
-              {post.date}
+              <div className='timelineTime'>
+              {typeof(post.start) != undefined && typeof(post.end) != undefined 
+              ?  (monthNames[new Date(post.start).getMonth()] + " " + new Date(post.start).getFullYear() + " - " +
+                  (post.end == 9999999999999 ? "Present" : monthNames[new Date(post.end).getMonth()] + " " + new Date(post.end).getFullYear()))  
+              : ""}
+              </div>
+              <div className='timelineLocation'>
+                {post.location}
+              </div>
             </TimelineOppositeContent>
             <TimelineSeparator>
               <TimelineDot variant="outlined"/>

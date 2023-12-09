@@ -5,6 +5,7 @@
   --gradient-primary: linear-gradient(90deg,#a29bd4,#989fdd);
   --background-primary: #1a202c;
   --background-secondary: #2d3748;
+  --background-tertiary: #252e3c;
   --background-highlight: #579BB1;
   --background-light: #F8F4EA;
   --background-dark: #d2c8b8;
@@ -12,7 +13,7 @@
   --dark-primary: #171923;
   --dark-default: #282c34;
   --dark-secondary: #3d4756;
-  --dark-disabled: #acacbe; 
+  --dark-disabled: #A0AAB4; 
   --text-error: var(--color-error);
   color: white;
 }
@@ -206,6 +207,13 @@ h3 {
   margin-top: 0px;
 }
 
+.searchSkill {
+  margin-left: 5px;
+  margin-top: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
 .skill {
   margin-right: 10px;
   margin-bottom: 10px;
@@ -227,4 +235,34 @@ h3 {
 
 .postHeader:hover .linkIcon {
   display: inline-block;
+}
+
+.searchHeader {
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 86vw;
+  padding-left: 6vw;
+  padding-right: 6vw;
+}
+
+.searchDropdown {
+  color: white;
+  font-size: 1.5em;
+  font-weight: 500;
+  font-family: "Segoe UI";
+}
+
+.timelineTime {
+  font-size: 1.12em;
+  font-weight: 400;
+  font-family: "Segoe UI";
+  margin-bottom: 2px;
+}
+
+.timelineLocation {
+  font-size: 0.8em;
+  font-weight: 400;
+  font-family: "Segoe UI";
+  font-style: italic;
 }
