@@ -6,6 +6,7 @@ import NavBar from "../components/NavBar";
 import Experience from "./Experience";
 import Projects from "./Projects";
 import Awards from "./Awards"
+import Search from "./Search"
 import Footer from "../components/Footer";
 
 function debounce(fn, ms) {
@@ -50,6 +51,7 @@ const RenderedWebpage = () => {
                     <Route path="/experience" element={<Experience dimensions={dimensions} />} />
                     <Route path="/projects" element={<Projects dimensions={dimensions} />} />
                     <Route path="/awards" element={<Awards dimensions={dimensions} />} />
+                    <Route path="/search" element={<Search dimensions={dimensions} />} />
                     <Route path="*" element={<Navigate dimensions={dimensions} to="/" replace />} />
                 </Routes>
                 <Footer dimensions={dimensions}/>

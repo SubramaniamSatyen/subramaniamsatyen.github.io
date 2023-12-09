@@ -36,7 +36,30 @@ a{
     font-size: 1em;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-right: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(197, 71, 71, 0);
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-search {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-right: 30px;
     color: white;
     text-align: center;
     text-decoration: none;
@@ -49,7 +72,6 @@ a{
     overflow: hidden;
 }
 
-
 .nav-item::before {
     content: "";
     position: absolute;
@@ -58,9 +80,9 @@ a{
     right: 0;
     bottom: 0;
     background: var(--color-primary);
-    height: 4px;
-    -webkit-transform: translateY(4px);
-    transform: translateY(4px);
+    height: 6px;
+    -webkit-transform: translateY(6px);
+    transform: translateY(6px);
     -webkit-transition-property: transform;
     transition-property: transform;
     -webkit-transition-duration: 0.3s;
