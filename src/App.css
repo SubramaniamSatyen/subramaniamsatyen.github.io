@@ -238,12 +238,13 @@ h3 {
 }
 
 .searchHeader {
-  padding-bottom: 10px;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
   width: 86vw;
-  padding-left: 6vw;
-  padding-right: 6vw;
+  margin-left: 6vw;
+  margin-right: 6vw;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.5);
 }
 
 .searchDropdown {
@@ -267,4 +268,10 @@ h3 {
   font-family: "Segoe UI";
   font-style: italic;
   text-shadow: 5px 5px 10px rgb(0 0 0 / 0.5);
+}
+
+.dateFilterHeader {
+  display: flex;
+  justify-content: space-evenly;
+  
 }

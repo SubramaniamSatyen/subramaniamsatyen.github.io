@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { ParallaxProvider } from 'react-scroll-parallax';
 import { useState, useEffect } from "react";
 
 import Home from "../pages/Home";
@@ -44,18 +45,20 @@ const RenderedWebpage = () => {
 
     return (
         <div className="App">
+          <ParallaxProvider>
             <BrowserRouter>
-                <NavBar dimensions={dimensions} />
+              <NavBar dimensions={dimensions} />
                 <Routes>
-                    <Route exact path="/" element={<Home dimensions={dimensions} />} />
-                    <Route path="/experience" element={<Experience dimensions={dimensions} />} />
-                    <Route path="/projects" element={<Projects dimensions={dimensions} />} />
-                    <Route path="/awards" element={<Awards dimensions={dimensions} />} />
-                    <Route path="/search" element={<Search dimensions={dimensions} />} />
-                    <Route path="*" element={<Navigate dimensions={dimensions} to="/" replace />} />
+                  <Route exact path="/" element={<Home dimensions={dimensions} />} />
+                  <Route path="/experience" element={<Experience dimensions={dimensions} />} />
+                  <Route path="/projects" element={<Projects dimensions={dimensions} />} />
+                  <Route path="/awards" element={<Awards dimensions={dimensions} />} />
+                  <Route path="/search" element={<Search dimensions={dimensions} />} />
+                  <Route path="*" element={<Navigate dimensions={dimensions} to="/" replace />} />
                 </Routes>
-                <Footer dimensions={dimensions}/>
+              <Footer dimensions={dimensions}/>
             </BrowserRouter>
+          </ParallaxProvider>
         </div>
     )
 }

@@ -12,9 +12,12 @@ import ProjectQuest from './images/Project_Quest.png';
 
 export const INCLUDE_IMAGE_WIDTH = 1000
 export const MOBILE_THRESHOLD = 800
+export const PRESENT_DATE = 9999999999999;
 
 export const RESUME_LINK = "https://drive.google.com/file/d/1TSpoFFq_fPkMvNWccngjbUsnVKA4IFm6/view?usp=sharing"
 export const LINKED_IN_LINK = "https://www.linkedin.com/in/satyen-sub"
+
+export const MONTH_NAMES = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
 export const POSTS = [{
 
