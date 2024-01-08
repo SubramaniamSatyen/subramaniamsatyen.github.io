@@ -186,7 +186,18 @@ export const POSTS = [{
     'location': 'Los Angeles, California',
     'start': 1677657600000,
     'end': 1685602800000,
-    'blurb': "ACM Hack's HackCloud is a weekly, two hour long workshop series exploring the field of cloud computing, the modern backbone for designing and deploying highly scalable, reliable, and available software services. For UCLA ACM's first time ever, ACM Hack dived into cloud fundamentals and best practices, tying the concepts into practical hands-on demos with Amazon Web Services. Topics discussed include the following: <li>VM Computing|Serverless Services|DevOps|Continuous Integration and Continuous Deployment|Machine Learning<li>",
+    'blurb':  <div>ACM Hack's HackCloud is a weekly, two hour long workshop series exploring the field of cloud computing, the modern 
+              backbone for designing and deploying highly scalable, reliable, and available software services. For UCLA ACM's first time
+              ever, ACM Hack dived into cloud fundamentals and best practices, tying the concepts into practical hands-on demos with 
+              Amazon Web Services. Topics discussed include the following: 
+                <ul>
+                  <li>VM Computing</li>
+                  <li>Serverless Services</li>
+                  <li>DevOps</li>
+                  <li>Continuous Integration and Continuous Deployment</li>
+                  <li>Machine Learning</li>
+                </ul>
+              </div>,
     'skills': ['React', 'AWS S3', 'AWS EC2', 'AWS Lambda', 'Docker', 'AWS Code Deploy', 'AWS Code Pipeline'],
     'links': [{'link': 'https://github.com/uclaacm/hack-curriculum/tree/main/HackCloud', 'text': 'HackCloud Repo'},
             {'link': 'https://youtube.com/playlist?list=PLPO7_kXilXFYP3nE3MfFmMg2BU9R4cKUu&si=9UvMDZ-xwLnKn8Do', 'text': 'Workshop Recordings'},
@@ -219,9 +230,22 @@ export const POSTS = [{
     'location': 'Los Angeles, California',
     'start': 1630479600000,
     'end': 9999999999999,
-    'blurb': "Below are links to my work for UCLA's undergraduate computer science classes: <li>CS 111 - Operating Systems: Assignments cover a range of reimplementing unix commands, optimizing at the OS level, and working with various system calls.|CS 35L - Software Construction: Assignments cover a range of programming frameworks and languages (Python, Lisp, React, etc.) and culminate in designing a three tiered web application.|CS 33 - Computer Architecture: Assignments cover code tracing through x86-64 machine language code, thread level parallelism, synchronization, and virtual memory.|CS 32 - Introduction to Computer Science II: Assignments test sorting, recursion, time complexity, polymorphism, and advanced data structures.|CS 31 - Introduction to Computer Science I: Assignments test control flow, arrays, pointers, and classes.<li>",
+    'blurb':  <div>Below are links to my work for UCLA's undergraduate computer science classes: 
+                <ul>
+                  <li>CS 131 - Programming Languages: Projects consist of building an interpreter for a new programming language (Brewin), adding all core language features.</li>
+                  <li>CS 118 - Network Fundamentals: Projects include creating a web server, a reverse proxy, and implementing reliability and congestion control over UDP.</li>
+                  <li>CS 111 - Operating Systems: Assignments cover a range of reimplementing unix commands, optimizing at the OS level, and working with various system calls.</li>
+                  <li>CS 35L - Software Construction: Assignments cover a range of programming frameworks and languages (Python, Lisp, React, etc.) and culminate in designing a three tiered web application.</li>
+                  <li>CS 33 - Computer Architecture: Assignments cover code tracing through x86-64 machine language code, thread level parallelism, synchronization, and virtual memory.</li>
+                  <li>CS 32 - Introduction to Computer Science II: Assignments test sorting, recursion, time complexity, polymorphism, and advanced data structures.</li>
+                  <li>CS 31 - Introduction to Computer Science I: Assignments test control flow, arrays, pointers, and classes.</li>
+                </ul>
+              </div>,
     'skills': ['C++', "C", "Python", "React", "Lisp", "MongoDB"],
-    'links': [{'link': "https://github.com/SubramaniamSatyen/CS111", 'text': "CS 111 Repo"},
+    'links': [{'link': "https://github.com/SubramaniamSatyen/CS131", 'text': "CS 131 Repo"},
+            {'link': "https://github.com/SubramaniamSatyen/CS118-Project1", 'text': "CS 118 Project 1"},
+            {'link': "https://github.com/SubramaniamSatyen/CS118-Project2", 'text': "CS 118 Project 2"},
+            {'link': "https://github.com/SubramaniamSatyen/CS111", 'text': "CS 111 Repo"},
             {'link': "https://github.com/SubramaniamSatyen/CS35L", 'text': "CS 35L Repo"},
             {'link': "https://github.com/hiimvincent/bruin-rides", 'text': "CS 35L Project Repo"},
             {'link': "https://github.com/SubramaniamSatyen/CS33", 'text': "CS 33 Repo"},

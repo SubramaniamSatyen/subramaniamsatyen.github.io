@@ -6,18 +6,12 @@ import '../App.css';
 
 import React from 'react'
 
-function format(text){
-    if (text != undefined){
-        return text.split("<li>").map((val, i) => i % 2 == 0 ? val : <ul>{val.split("|").map((item) => <li>{item}</li>)}</ul>);
-    }
-    return "";
-}
 function PostBody({ blurb, accomplishments, skills, showLogo, logo, noStyle, logoAlt, logoWidth, logoHeight, links }) {
     return (
         <div className='row'>
           <div>
             <p className='paragraphBlock'>
-              {format(blurb)}
+              {blurb}
             </p>
             {accomplishments && accomplishments.length > 0 ? 
             <div>
