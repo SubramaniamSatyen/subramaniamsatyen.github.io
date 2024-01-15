@@ -91,7 +91,7 @@ function Awards({ dimensions }) {
         />
         <div className='skillList'>
           {POSTS.map((post) => post.skills.platforms).flat()
-          .filter((v, i, self) => i == self.indexOf(v) && v !== '' && v !== undefined)
+          .filter((v, i, self) => i === self.indexOf(v) && v !== '' && v !== undefined)
           .map((name) => <SkillChip name={name} />)}
         </div>
       </div>
@@ -102,7 +102,7 @@ function Awards({ dimensions }) {
         />
         <div className='skillList'>
           {POSTS.map((post) => post.skills.frameworks).flat()
-          .filter((v, i, self) => i == self.indexOf(v) && v !== '' && v !== undefined)
+          .filter((v, i, self) => i === self.indexOf(v) && v !== '' && v !== undefined)
           .map((name) => <SkillChip name={name} />)}
         </div>
       </div>
@@ -113,7 +113,7 @@ function Awards({ dimensions }) {
         />
         <div className='skillList'>
           {POSTS.map((post) => post.skills.concepts).flat()
-          .filter((v, i, self) => i == self.indexOf(v) && v !== '' && v !== undefined)
+          .filter((v, i, self) => i === self.indexOf(v) && v !== '' && v !== undefined)
           .map((name) => <SkillChip name={name} />)}
         </div>
       </div>
@@ -124,7 +124,7 @@ function Awards({ dimensions }) {
         />
         <div className='skillList'>
           {POSTS.map((post) => post.skills.languages).flat()
-          .filter((v, i, self) => i == self.indexOf(v) && v !== '' && v !== undefined)
+          .filter((v, i, self) => i === self.indexOf(v) && v !== '' && v !== undefined)
           .map((name) => <SkillChip name={name} />)}
         </div>
       </div>
