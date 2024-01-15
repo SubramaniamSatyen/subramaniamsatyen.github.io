@@ -20,7 +20,6 @@ export const LINKED_IN_LINK = "https://www.linkedin.com/in/satyen-sub"
 export const MONTH_NAMES = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
 
 export const POSTS = [{
-
     // Experience Posts
     'category': 'experience',
     'id': 'pnnl', 
@@ -30,13 +29,21 @@ export const POSTS = [{
     'end': 9999999999999, 
     'location': 'Seattle, Washington',
     'blurb': 'Pacific Northwest National Laboratory (PNNL) is a leading center for scientific discovery in data analytics and for technological innovation in sustainable energy and national security. PNNL is operated by Battelle and fosters a wide breadth of engineering projects - I worked as a member of the MLE and Combined Ops team under the Software Engineering Architectures (SEA) group.',
-    'accomplishments': ['Constructed pipeline for processing terabyte scale data using AWS services and Databricks',
-              'Produced Python unit tests for Pyspark codebase and integrated into Atlassian Bamboo CI/CD',
-              'Integrated automatic semantic versioning of custom python package code into data pipeline',
-              'Migrated development scale pipeline to AWS Glue and AWS EMR, with AWS Step Functions and Apache Oozie respectively for orchestration management',
-              'Conducted AWS Lambda performance analysis through the AWS CLI and refactored function to utilize AWS S3 Select functionality',
-              'Explored DataHub data catalog, aggregating schema lineage for cross platform data transformations along ETL pipeline'],
-    'skills': ['Python', 'AWS S3', 'AWS EC2', 'AWS Lambda', 'AWS Glue', 'AWS EMR', 'Databricks', 'Pyspark', 'DataHub'],
+    'accomplishments': [
+      'Constructed pipeline for processing terabyte scale data using AWS services and Databricks',
+      'Produced Python unit tests for Pyspark codebase and integrated into Atlassian Bamboo CI/CD',
+      'Integrated automatic semantic versioning of custom python package code into data pipeline',
+      'Migrated development scale pipeline to AWS Glue and AWS EMR, with AWS Step Functions and Apache Oozie respectively for orchestration management',
+      'Conducted AWS Lambda performance analysis through the AWS CLI and refactored function to utilize AWS S3 Select functionality',
+      'Explored DataHub data catalog, aggregating schema lineage for cross platform data transformations along ETL pipeline',
+      'Architected daily summary of data processing pipeline using CloudWatch metrics and AWS SNS subscriptions'
+    ],
+    'skills': {
+      'platforms': ['AWS S3', 'AWS EC2', 'AWS Lambda', 'AWS CloudWatch', 'AWS SQS', 'AWS SNS', 'AWS Glue', 'AWS EMR', 'Databricks', 'DataHub'],
+      'languages': ['Python', 'Scala'],
+      'concepts': [],
+      'frameworks': ['Pyspark', 'Apache Spark']
+    },
     'logo': PNNL,
     'logoAlt': 'PNNL Logo',
     'logoWidth': '200',
@@ -55,7 +62,12 @@ export const POSTS = [{
             'Leveraged C# to efficiently query Microsoft SQL Server database and balance payment across credit and debit fees on a shared invoice',
             'Refactored and unified logic for automatic approval of property exemptions across internal billing system and customer portal by way of unified API',
             'Developed API to streamline process of adding invoice entries to Microsoft SQL Server database and secured endpoints with bearer authentication token'],
-    'skills': ['SQL', 'ASP.NET', 'C#', 'JavaScript', 'Shell'],
+    'skills': {
+      'platforms': [],
+      'languages': ['SQL', 'C#', 'JavaScript', 'HTML', 'CSS', 'Shell'],
+      'concepts': [],
+      'frameworks': ['ASP.NET', 'MS SQL Server']
+    },
     'logo': LAHD,
     'logoAlt':'LAHD Logo',
     'logoWidth':'200'
@@ -74,7 +86,12 @@ export const POSTS = [{
             'Aggregated access to developed microservices within Looker by constructing React extension',
             'Assembled RESTful quant API service on Google Cloud Run to query BigQuery data, fetch calculated values from API, and visualize content with JavaScript on Looker dashboard',
             'Developed internal SciKit Learn and TensorFlow machine learning teaching resources and documentation'],
-    'skills': ['Tensorflow', 'SciKit Learn', 'React', 'Typescript', 'Looker', 'GCP BigQuery', 'GCP App Engine'],
+    'skills': {
+      'platforms': ['Looker', 'GCP BigQuery', 'GCP App Engine', 'GCP Cloud Run'],
+      'languages': ['TypeScript', 'JavaScript', 'Python'],
+      'concepts': [],
+      'frameworks': ['Tensorflow', 'SciKit Learn', 'React']
+    },
     'links': [{'link': 'https://github.com/SubramaniamSatyen/BondMLWorkshops', 'text': 'ML Documentation'}],
     'logo': BOND,
     'logoAlt': 'Bond Intelligence Logo',
@@ -103,7 +120,12 @@ export const POSTS = [{
     'start': 1641024000000,
     'end': 1654066800000,
     'blurb': "Acted as a Learning Assistant for the undergraduate core computer science classes CS 31: Introduction to Computer Science I and CS32: Introduction to Computer Science II. Prepared practice and lead weekly two hour long discussion sections, as well as career building workshops throughout quarter. Course curriculum covered fundamental topics like data structures, time complexity, object oriented design, and polymorphism.",
-    'skills': ['C++', 'Data Structures', 'Algorithms', 'OOP'],
+    'skills': {
+      'platforms': [],
+      'languages': ['C++'],
+      'concepts': ['Data Structures', 'Algorithms', 'OOP'],
+      'frameworks': []
+    },
     'links': [{'link': 'https://web.cs.ucla.edu/classes/spring1d/cs31/syllabus.html', 'text': 'CS 31 Syllabus'},
             {'link': 'https://web.cs.ucla.edu/classes/spring1d/cs32/syllabus.html', 'text': 'CS 32 Syllabus'},
             {'link': 'https://github.com/SubramaniamSatyen/CS32_LA', 'text': 'CS 32 Practice Repo'}]
@@ -123,7 +145,12 @@ export const POSTS = [{
                             'Deployed an Express.js API to perform calculations on data before passing to dashboard service',
                             'Configured visualization tool with SSL and custom domain using GoDaddy and AWS Route 53',
                             'Architected hosting for 3D point cloud LiDAR street visualizations using AWS S3'],
-    'skills': ['React', 'Express.js', 'AWS S3', 'AWS EC2', 'AWS Elastic Beanstalk', 'AWS Route 53'],
+    'skills': {
+      'platforms': ['AWS S3', 'AWS EC2', 'AWS Elastic Beanstalk', 'AWS Route 53', 'AWS CodePipeline', 'AWS CodeBuild'],
+      'languages': ['JavaScript', 'Python'],
+      'concepts': [],
+      'frameworks': ['React', 'Express.js']
+    },
     'links': [{'link': 'https://site.hspa.info/', 'text': 'HSPA Site'},
               {'link': 'https://drive.google.com/file/d/1vva4XtuSWtrcsaBBjzvu_F2UR0Y6hVsX/view?usp=sharing', 'text': 'SRI Certificate'},
               {'link': 'https://sri-lab.seas.ucla.edu/', 'text': 'SRI Lab Site'}],
@@ -142,7 +169,12 @@ export const POSTS = [{
     'accomplishments': ['Evaluated efficacy of large language models in computation scenarios by sourcing college-level scientific problems',
                       'Extracted keyword and equations for model training, and computational questions using optical recognition tools',
                       'Summarize accuracy of NLP model in paper by classifying incorrect predictions into 10 error categories'],
-    'skills': ['Python', 'Shell', 'NLP'],
+    'skills': {
+      'platforms': [],
+      'languages': ['Python', 'Shell'],
+      'concepts': ['NLP'],
+      'frameworks': ['Open AI']
+    },
     'links': [{'link': 'https://drive.google.com/file/d/1p2c0Z70m9Td4RDMVzSrBRpAb2kBcJ4Hc/view?usp=sharing', 'text': 'Read Paper'},
             {'link': 'https://github.com/mandyyyyii/scibench/tree/main', 'text': 'Benchmark Repo'}],
     'logo': ScAI,
@@ -174,7 +206,12 @@ export const POSTS = [{
     'start': 1693551600000,
     'end': 1701417600000,
     'blurb': "ACM Hack's HackFam is a mentorship program hosted by ACM Hack's officer team. Each Hack Family is led by two fam heads and manages 15 to 20 students, offering social, academic, and career building advice and events throughout the course of the quarter. Under my leadership, students participated in a year long full stack mobile development project using React Native and Expo for a cross platform UI, and firebase for persistent storage of images and user data.",
-    'skills': ['React', 'React Native', 'Firebase'],
+    'skills': {
+      'platforms': ['Firebase'],
+      'languages': ['JavaScript'],
+      'concepts': [],
+      'frameworks': ['React Native']
+    },
     'links': [{'link': 'https://hack.uclaacm.com/', 'text': 'ACM Hack Site'}],
     'logo': HackFam,
     'logoWidth': '400'
@@ -198,7 +235,12 @@ export const POSTS = [{
                   <li>Machine Learning</li>
                 </ul>
               </div>,
-    'skills': ['React', 'AWS S3', 'AWS EC2', 'AWS Lambda', 'Docker', 'AWS Code Deploy', 'AWS Code Pipeline'],
+    'skills': {
+      'platforms': ['AWS S3', 'AWS EC2', 'AWS Lambda', 'AWS CodeDeploy', 'AWS CodePipeline', 'AWS CodeBuild'],
+      'languages': ['JavaScript'],
+      'concepts': [],
+      'frameworks': ['React', 'Docker']
+    },
     'links': [{'link': 'https://github.com/uclaacm/hack-curriculum/tree/main/HackCloud', 'text': 'HackCloud Repo'},
             {'link': 'https://youtube.com/playlist?list=PLPO7_kXilXFYP3nE3MfFmMg2BU9R4cKUu&si=9UvMDZ-xwLnKn8Do', 'text': 'Workshop Recordings'},
             {'link': 'https://hack.uclaacm.com/archive#fall-2022-hackschool', 'text': 'ACM Hack Site'}],
@@ -213,7 +255,12 @@ export const POSTS = [{
     'start': 1662015600000,
     'end': 1669881600000,
     'blurb': "ACM StackSchool is a fullstack workshop series aiming to teach students to use the MERN tech stack. Over the course of seven weeks, we constructed a MERN social media application. To build a strong intutition for the tech stack, the ACM Hack officer team designed a four chapter textbook covering the essentials.",
-    'skills': ['React', 'Express.js', 'MongoDB'],
+    'skills': {
+      'platforms': ['MongoDB'],
+      'languages': ['JavaScript'],
+      'concepts': [],
+      'frameworks': ['React', 'Express.js']
+    },
     'links': [{'link': 'https://github.com/uclaacm/hack-curriculum/tree/main/stackschool', 'text': 'Textbook Repo'},
             {'link': 'https://github.com/SubramaniamSatyen/WinterLearningStackschool', 'text': 'MERN Demo Repo'},
             {'link': 'https://github.com/SubramaniamSatyen/Stackschool_2023_Cat_Server', 'text': 'REST API Demo Repo'}],
@@ -241,7 +288,12 @@ export const POSTS = [{
                   <li>CS 31 - Introduction to Computer Science I: Assignments test control flow, arrays, pointers, and classes.</li>
                 </ul>
               </div>,
-    'skills': ['C++', "C", "Python", "React", "Lisp", "MongoDB"],
+    'skills': {
+      'platforms': ['MongoDB'],
+      'languages': ['C++', 'C', 'Python', 'Lisp'],
+      'concepts': [],
+      'frameworks': ['React', 'Express.js']
+    },
     'links': [{'link': "https://github.com/SubramaniamSatyen/CS131", 'text': "CS 131 Repo"},
             {'link': "https://github.com/SubramaniamSatyen/CS118-Project1", 'text': "CS 118 Project 1"},
             {'link': "https://github.com/SubramaniamSatyen/CS118-Project2", 'text': "CS 118 Project 2"},
@@ -260,7 +312,12 @@ export const POSTS = [{
     'start': 1677657600000,
     'end': 1685602800000,
     'blurb': "To showcase a strong understanding of using sensors to observe and analyze experimental results, we made use of an Arduino Nano to process speech data, construct a coherent internal representation of the digits spoken, and visualize the sum.",
-    'skills': ['Tensorflow', 'Python', 'Arduino', 'Pyfirmata'],
+    'skills': {
+      'platforms': ['Arduino'],
+      'languages': ['Python'],
+      'concepts': [],
+      'frameworks': ['Tensorflow', 'Pyfirmata']
+    },
     'links': [{'link': 'https://docs.google.com/presentation/d/1KfZw5EOzLQJrUtPOuc-XcVbb35R4j-Fn6mUgvgD-LCw/edit?usp=sharing', 'text': 'Slide Showcase'}],
     'logo': Calc,
     'logoWidth': '300'
@@ -273,7 +330,12 @@ export const POSTS = [{
     'start': 1646121600000,
     'end': 1654066800000,
     'blurb': "A mobile app created with a team of four UCLA students during the course of a quarter: ReactWithMe. Our app allows users to add timestamped reactions when watching a video, then share those reactions so friends can see you react in real time as they watch the same content. The app was created using firebase for persistent storage and React Native for our UI.",
-    'skills': ['React Native', 'Firebase'],
+    'skills': {
+      'platforms': ['Firebase'],
+      'languages': ['JavaScript'],
+      'concepts': [],
+      'frameworks': ['React Native']
+    },
     'links': [{'link': 'https://github.com/SubramaniamSatyen/HackSpace2022', 'text': 'GitHub Repo'}]
   }, {
     'category': 'other',
@@ -284,7 +346,12 @@ export const POSTS = [{
     'start': 1598943600000,
     'end': 1622530800000,
     'blurb': "Project Quest is 3D, adventure RPG with a 16-bit art style, prominently featuring problem solving and strategy puzzles. Players begin by controlling the character of Ben, a first year TSA member, but later manage a larger party of diverse characters. After losing his Video Game Design TSA project in an accident, Ben and his friends must search through four expansive and distinct levels to find the project before it's too late! Throughout the game, players can interact with their environment to acquire coins, items, and weapons. Players can also visit the TSA shop to acquire more gear for coins. Enemies are present in each level, including mini-bosses, as well an fully-fledged final bosses.",
-    'skills': ['C#'],
+    'skills': {
+      'platforms': ['Unity'],
+      'languages': ['C#'],
+      'concepts': [],
+      'frameworks': []
+    },
     'logo': ProjectQuest,
     'logoWidth': '400',
     'links': [{'link': 'https://subramaniamsatyen.itch.io/project-quest', 'text': 'Game Download'},

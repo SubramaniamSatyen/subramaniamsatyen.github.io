@@ -21,11 +21,12 @@ function PostBody({ blurb, accomplishments, skills, showLogo, logo, noStyle, log
                 </ul>
             </div>
             : null}
-            {skills && skills.length > 0 ? 
+            {skills && Object.entries(skills).length > 0 ? 
             <div>
                 <h3>Skills:</h3>
                 <div>
-                    {skills.map((skill) => <SkillChip name={skill} />)}
+                    {Object.entries(skills).map(([_key, value], _index) => value).flat().sort()
+                    .map((skill) => <SkillChip key={skill} name={skill} />)}
                 </div>
             </div>
             : null}

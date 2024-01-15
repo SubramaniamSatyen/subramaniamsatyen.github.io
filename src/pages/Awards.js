@@ -5,18 +5,11 @@ import PostHeader from '../components/PostHeader';
 import AWS from '../images/AWS.png';
 import PB from '../images/PlannedBruin.jpg';
 
-import {INCLUDE_IMAGE_WIDTH} from '../constants';
+import {INCLUDE_IMAGE_WIDTH, POSTS} from '../constants';
 
 import '../App.css';
 
 function Awards({ dimensions }) {
-  const platforms = ["AWS S3", "AWS EC2", "AWS Lambda", "AWS Glue", "AWS EMR",  "AWS Elastic Beanstalk", "AWS Route 53", "AWS Lambda", "DataHub",
-                    "Looker", "GCP BigQuery", "GCP Cloud Run", "GCP App Engine", "Databricks", "Firebase", "MongoDB"]
-  const frameworks_tools = ["Docker", "Docker Compose", "TensorFlow", "SciKit Learn", "PyTorch", "Pyspark", "Apache Spark", 
-                            "Linux", "Arduino", "ASP.NET", "Express.js"]
-  const concepts = ["Data Structures", "Algorithms", "OOP", "Cloud Computing", "Distributed Systems", "Machine Learning", "AI", "NLP"]
-  const languages = ["Python", "C++", "C", "C#", "JavaScript", "React", "React Native", "TypeScript",  "SQL", "Lisp"]  
-
   return (
     <div className="App application">
       <h1 className='leftAlign title'>Awards</h1>
@@ -97,7 +90,9 @@ function Awards({ dimensions }) {
           text='Platforms'
         />
         <div className='skillList'>
-          {platforms.map((name) => <SkillChip name={name} />)}
+          {POSTS.map((post) => post.skills.platforms).flat()
+          .filter((v, i, self) => i == self.indexOf(v) && v !== '' && v !== undefined)
+          .map((name) => <SkillChip name={name} />)}
         </div>
       </div>
       <div className="postEntry">
@@ -106,7 +101,9 @@ function Awards({ dimensions }) {
           text='Frameworks and Tools'
         />
         <div className='skillList'>
-          {frameworks_tools.map((name) => <SkillChip name={name} />)}
+          {POSTS.map((post) => post.skills.frameworks).flat()
+          .filter((v, i, self) => i == self.indexOf(v) && v !== '' && v !== undefined)
+          .map((name) => <SkillChip name={name} />)}
         </div>
       </div>
       <div className="postEntry">
@@ -115,7 +112,9 @@ function Awards({ dimensions }) {
           text='Concepts'
         />
         <div className='skillList'>
-          {concepts.map((name) => <SkillChip name={name} />)}
+          {POSTS.map((post) => post.skills.concepts).flat()
+          .filter((v, i, self) => i == self.indexOf(v) && v !== '' && v !== undefined)
+          .map((name) => <SkillChip name={name} />)}
         </div>
       </div>
       <div className="postEntry">
@@ -124,7 +123,9 @@ function Awards({ dimensions }) {
           text='Languages'
         />
         <div className='skillList'>
-          {languages.map((name) => <SkillChip name={name} />)}
+          {POSTS.map((post) => post.skills.languages).flat()
+          .filter((v, i, self) => i == self.indexOf(v) && v !== '' && v !== undefined)
+          .map((name) => <SkillChip name={name} />)}
         </div>
       </div>
     </div>
