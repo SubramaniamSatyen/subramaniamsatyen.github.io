@@ -9,6 +9,8 @@ import StackSchool from './images/StackSchool.png';
 import HackFam from './images/HackFam.png';
 import Calc from './images/Calculator.png';
 import ProjectQuest from './images/Project_Quest.png';
+import ACMCloudAWS from './images/ACM_Cloud_AWS.png';
+import HOTH from './images/HOTH.png';
 
 export const INCLUDE_IMAGE_WIDTH = 1000
 export const MOBILE_THRESHOLD = 800
@@ -184,14 +186,72 @@ export const POSTS = [{
   // Club Project
   {
     'category': 'club',
+    'id': 'hoth-xi',
+    'hidden': false,
+    'title': 'Hack on the Hill XI',
+    'location': 'Los Angeles, California',
+    'start': 1704153600000,
+    'end': 1709337600000,
+    'blurb': <div>Directed Hack on the Hill XI - ACM UCLA's 11th iteration of their beginner friendly 12-hour hackathon. 
+      Responsibilites included securing funding and sponsorships, securing a venue, coordinating food and prizes, organizing marketing
+      efforts, communicating with faculty guests and keynote speaker, leading judging process, and facilitating mentorship.</div>,
+    'skills': {
+      'platforms': ['Firebase'],
+      'languages': [],
+      'concepts': [],
+      'frameworks': ['React', 'Gatsby']
+    },
+    'links': [{'link': 'https://hoth.uclaacm.com/', 'text': 'HOTH Website'},
+            {'link': 'https://hoth-xi.devpost.com/', 'text': 'Dev Post'},
+            {'link': 'https://hoth.uclaacm.com/workshops', 'text': 'Workshops'}],
+    'logo': HOTH,
+    'logoWidth': '300'
+  },
+  {
+    'category': 'club',
+    'id': 'aws-workshop',
+    'hidden': false,
+    'title': 'ACM Cloud: AWS Workshop Series',
+    'location': 'Los Angeles, California',
+    'start': 1704153600000,
+    'end': 1709337600000,
+    'blurb': <div>Directed ACM Cloud's debut of its winter quarter flagship AWS workshop series. Over the course of the quarter,
+       learn essential theory for working with cloud provides and leverage AWS's free tier to create and deploy a full
+        stack web application. Topics covered included the following
+      <ul>
+        <li>Introduction to AWS</li>
+        <li>Management and Scaling with Elastic Beanstalk</li>
+        <li>Continuous Integration and Deployment</li>
+        <li>Databases and Serverless</li>
+        <li>Infrastructure as Code</li>
+      </ul>
+    </div>,
+    'skills': {
+      'platforms': ['AWS Lambda', 'AWS DynamoDB', 'AWS API Gateway', 'AWS EC2', 'AWS Elastic Beanstalk', 'AWS CodeBuild', 'AWS CodePipeline', 'AWS ECR'],
+      'languages': [],
+      'concepts': [],
+      'frameworks': ['Docker']
+    },
+    'links': [{'link': 'https://github.com/uclaacm/acmcloud-aws-w24', 'text': 'ACM Cloud Demo'},
+            {'link': 'https://youtube.com/playlist?list=PLPO7_kXilXFbM5ICaiu6qow05bfg_Itz_&si=-ViOz33ol3GwPPpL', 'text': 'Recordings'}],
+    'logo': ACMCloudAWS,
+    'logoWidth': '330'
+  },
+  {
+    'category': 'club',
     'id': 'distributed-systems',
     'hidden': false,
-    'title': 'ACM Cloud and Distributed Systems Initiative',
+    'title': 'ACM Cloud Initiative: Distributed Systems Project',
     'location': 'Los Angeles, California',
     'start': 1693551600000,
     'end': 1701417600000,
-    'blurb': "ACM Cloud aims to providing resources to build a strong intuition of the architectural foundations of the modern cloud environment through project-based hands-on experience. ACM Cloud comprises of a weekly workshop series covering distributed system fundamentals and two hours worth of work time for our group distributed file system project.",
-    'skills': ['Python', 'Distributed Systems', 'Docker', 'Docker Compose'],
+    'blurb': "Created ACM Cloud, aiming to providing resources to build a strong intuition of the architectural foundations of the modern cloud environment through project-based hands-on experience. ACM Cloud comprises of a weekly workshop series covering distributed system fundamentals and two hours worth of work time for our group distributed file system project.",
+    'skills': {
+      'platforms': [],
+      'languages': ['Python'],
+      'concepts': ['Distributed Systems'],
+      'frameworks': ['Docker', 'Docker Compose']
+    },
     'links': [{'link': 'https://drive.google.com/drive/folders/1dITUtF0luR9hXQsZr2zhybNsq2i0g_qM?usp=drive_link', 'text': 'ACM Cloud Slides'},
             {'link': 'https://github.com/SubramaniamSatyen/RPCDemo', 'text': 'RPC Demo'},
             {'link': 'https://docs.google.com/document/d/1lz-736htMtZeV3krSLNeRRzxQcI3H0fHn87OdWKZwGI/edit?usp=sharing', 'text': 'Project Spec'}],
@@ -200,7 +260,7 @@ export const POSTS = [{
   }, {
     'category': 'club',
     'id': 'hackfam',
-    'hidden': false,
+    'hidden': true,
     'title': 'ACM Hack - HackFam',
     'location': 'Los Angeles, California',
     'start': 1693551600000,
@@ -241,9 +301,9 @@ export const POSTS = [{
       'concepts': [],
       'frameworks': ['React', 'Docker']
     },
-    'links': [{'link': 'https://github.com/uclaacm/hack-curriculum/tree/main/HackCloud', 'text': 'HackCloud Repo'},
+    'links': [{'link': 'https://github.com/uclaacm/hack-curriculum/tree/main/archive/hackcloud', 'text': 'HackCloud Repo'},
             {'link': 'https://youtube.com/playlist?list=PLPO7_kXilXFYP3nE3MfFmMg2BU9R4cKUu&si=9UvMDZ-xwLnKn8Do', 'text': 'Workshop Recordings'},
-            {'link': 'https://hack.uclaacm.com/archive#fall-2022-hackschool', 'text': 'ACM Hack Site'}],
+            {'link': 'https://hack.uclaacm.com', 'text': 'ACM Hack Site'}],
     'logo': Cloud,
     'logoWidth': '300'
   }, {
@@ -279,6 +339,7 @@ export const POSTS = [{
     'end': 9999999999999,
     'blurb':  <div>Below are links to my work for UCLA's undergraduate computer science classes: 
                 <ul>
+                  <li>CS M148 - Data Science: Projects consist of leveraging Python and SciKit Learn to clean data and train models across sample datasets.</li>
                   <li>CS 131 - Programming Languages: Projects consist of building an interpreter for a new programming language (Brewin), adding all core language features.</li>
                   <li>CS 118 - Network Fundamentals: Projects include creating a web server, a reverse proxy, and implementing reliability and congestion control over UDP.</li>
                   <li>CS 111 - Operating Systems: Assignments cover a range of reimplementing unix commands, optimizing at the OS level, and working with various system calls.</li>
@@ -294,7 +355,8 @@ export const POSTS = [{
       'concepts': [],
       'frameworks': ['React', 'Express.js']
     },
-    'links': [{'link': "https://github.com/SubramaniamSatyen/CS131", 'text': "CS 131 Repo"},
+    'links': [{'link': "https://github.com/SubramaniamSatyen/CSM148", 'text': "CS M148 Repo"},
+            {'link': "https://github.com/SubramaniamSatyen/CS131", 'text': "CS 131 Repo"},
             {'link': "https://github.com/SubramaniamSatyen/CS118-Project1", 'text': "CS 118 Project 1"},
             {'link': "https://github.com/SubramaniamSatyen/CS118-Project2", 'text': "CS 118 Project 2"},
             {'link': "https://github.com/SubramaniamSatyen/CS111", 'text': "CS 111 Repo"},
