@@ -130,7 +130,7 @@ function Search({ dimensions }) {
     const [startValue, setStartValue] = React.useState(dayjs(Math.min(...POSTS.map(p => p.start))));
     const [endValue, setEndValue] = React.useState(dayjs());
 
-    const skills = [...new Set(POSTS.map(post => post.skills).flat())].map((skill, i) => ({'label': skill, 'id': i}))
+    const skills = [...new Set(POSTS.map(post => Object.values(post.skills).flat()).flat())].map((skill, i) => ({'label': skill, 'id': i}))
 
     return (
         <div className="App application">
@@ -212,15 +212,15 @@ function Search({ dimensions }) {
             {/* <h1 className='leftAlign title'>Search Results</h1> */}
             {<PostTimeline posts={skillFilters.length > 0 && keywordSearch.length > 0
                                   ? POSTS.filter(post => (post.end <= endValue || (post.end === PRESENT_DATE && endValue.month() === dayjs().month() && endValue.year() === dayjs().year())) && post.start >= startValue)
-                                         .filter(post => post.skills.filter(skill => skillFilters.map(sf => sf.label).includes(skill)).length > 0)
-                                         .filter(post => keywordSearch.split(' ').filter(word => word.length > 0 && post.blurb.toLowerCase().includes(word)).length > 0 || 
+                                         .filter(post => Object.values(post.skills).flat().filter(skill => skillFilters.map(sf => sf.label).includes(skill)).length > 0)
+                                         .filter(post => keywordSearch.split(' ').filter(word => word.length > 0 && String(post.blurb).toLowerCase().includes(word)).length > 0 || 
                                                 keywordSearch.split(' ').filter(word => word.length > 0 && (typeof(post.accomplishments) !== 'undefined' ? post.accomplishments.join(' ').toLowerCase().includes(word) : false)).length > 0)
                                   : (skillFilters.length > 0 
                                   ? POSTS.filter(post => (post.end <= endValue || (post.end === PRESENT_DATE && endValue.month() === dayjs().month() && endValue.year() === dayjs().year())) && post.start >= startValue)
-                                         .filter(post => post.skills.filter(skill => skillFilters.map(sf => sf.label).includes(skill)).length > 0)
+                                         .filter(post => Object.values(post.skills).flat().filter(skill => skillFilters.map(sf => sf.label).includes(skill)).length > 0)
                                   : (keywordSearch.length > 0 
                                   ? POSTS.filter(post => (post.end <= endValue || (post.end === PRESENT_DATE && endValue.month() === dayjs().month() && endValue.year() === dayjs().year())) && post.start >= startValue)
-                                         .filter(post => keywordSearch.split(' ').filter(word => word.length > 0 && post.blurb.toLowerCase().includes(word)).length > 0 ||
+                                         .filter(post => keywordSearch.split(' ').filter(word => word.length > 0 && String(post.blurb).toLowerCase().includes(word)).length > 0 ||
                                                 keywordSearch.split(' ').filter(word => word.length > 0 && (typeof(post.accomplishments) !== 'undefined' ? post.accomplishments.join(' ').toLowerCase().includes(word) : false)).length > 0)
                                   : POSTS.filter(post => (post.end <= endValue || (post.end === PRESENT_DATE && endValue.month() === dayjs().month() && endValue.year() === dayjs().year())) && post.start >= startValue)))} dimensions={dimensions} />}
         </div>
