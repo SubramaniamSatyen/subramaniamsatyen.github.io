@@ -9,14 +9,16 @@ import StackSchool from './images/StackSchool.png';
 import HackFam from './images/HackFam.png';
 import Calc from './images/Calculator.png';
 import ProjectQuest from './images/Project_Quest.png';
+import LastStand from './images/LastStand.png'
 import ACMCloudAWS from './images/ACM_Cloud_AWS.png';
 import HOTH from './images/HOTH.png';
+import LearnPy from './images/learn_py.png'
 
 export const INCLUDE_IMAGE_WIDTH = 1000
 export const MOBILE_THRESHOLD = 800
 export const PRESENT_DATE = 9999999999999;
 
-export const RESUME_LINK = "https://drive.google.com/file/d/1fCk13dl82glWGHSivgABHTcp55F86JcO/view?usp=sharing"
+export const RESUME_LINK = "https://drive.google.com/file/d/1BfXFiMnPF7VpCIMMbOhfo1BfuP_9UndP/view?usp=drive_link"
 export const LINKED_IN_LINK = "https://www.linkedin.com/in/satyen-sub"
 
 export const MONTH_NAMES = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
@@ -99,7 +101,7 @@ export const POSTS = [{
     'logoAlt': 'Bond Intelligence Logo',
     'logoHeight': '200'
   },
-  
+
   // Teaching Posts
   {
     'category': 'teach',
@@ -141,7 +143,7 @@ export const POSTS = [{
     'title': 'UCLA Sensing and Robotics for Infrastructure',
     'location': 'Los Angeles, California',
     'start': 1677657600000,
-    'end': 1701417600000,
+    'end': 1717311600000,
     'blurb': "UCLA's Sensing and Robotics for Infrastructure Lab's goal is to better understand and quantify the condition and remaining useful life of civil and mechanical infrastructure systems through the intelligent use of sensors and data. The lab visualizes this data in an accessible manner to enhance the process of maintaining and improving our infrastructure.",
     'accomplishments': ['Created CI/CD process to deploy a fast and filterable React dashboard to demystify road quality data using AWS Elastic Beanstalk',
                             'Deployed an Express.js API to perform calculations on data before passing to dashboard service',
@@ -155,6 +157,7 @@ export const POSTS = [{
     },
     'links': [{'link': 'https://site.hspa.info/', 'text': 'HSPA Site'},
               {'link': 'https://drive.google.com/file/d/1vva4XtuSWtrcsaBBjzvu_F2UR0Y6hVsX/view?usp=sharing', 'text': 'SRI Certificate'},
+              {'link': 'https://drive.google.com/file/d/12m4ArOOtq8slDleYijpyr-QqguYE3U-i/view?usp=drive_link', 'text': 'City of LA Certificate'},
               {'link': 'https://sri-lab.seas.ucla.edu/', 'text': 'SRI Lab Site'}],
     'logo': SRI,
     'logoWidth': '250'
@@ -164,9 +167,8 @@ export const POSTS = [{
     'hidden': false,
     'title': 'UCLA Scalable Analytics Institute',
     'location': 'Los Angeles, California',
-    'date': 'May 2023 - Sep 2023',
     'start': 1682924400000,
-    'end': 9999999999999,
+    'end': 1717311600000,
     'blurb': "UCLA's Scalable Analytics Institute is focused on addressing the continuing growth of data and the demand for smart analytics to mine that data by solving the three-pronged challenge created by the exploding size of big data, the growing complexity of big data, and the increased sophistication of analytics that can be used to extract patterns and trends from the data.",
     'accomplishments': ['Evaluated efficacy of large language models in computation scenarios by sourcing college-level scientific problems',
                       'Extracted keyword and equations for model training, and computational questions using optical recognition tools',
@@ -185,6 +187,29 @@ export const POSTS = [{
     
   // Club Project
   {
+    'category': 'club',
+    'id': 'learn-py',
+    'hidden': false,
+    'title': 'ACM Hack: Learn.py',
+    'location': 'Los Angeles, California',
+    'start': 1709337600000,
+    'end': 1717311600000,
+    'blurb': <div>Learn.py dives deep into two common use cases for Python: OpenCV and web scraping, aiming to provide students with a 
+      fully functioning project after attending each session. Under the topic of OpenCV, I introduced participants to the fundamentals of computer
+      vision, before designing a flexible CLI tool to transform photos into art with OpenCV.
+    </div>,
+    'skills': {
+      'platforms': [],
+      'languages': ['Python'],
+      'concepts': [],
+      'frameworks': ['OpenCV', 'SciKit Learn', 'TensorFlow']
+    },
+    'links': [{'link': 'https://github.com/uclaacm/learn.py-24/tree/main', 'text': 'Learn.py Repo'},
+            {'link': 'https://docs.google.com/presentation/d/1_0k0E2MFRdN7fAwwIF3nqAq3M0N6kd25J1XH1Hk6khc/edit?usp=sharing', 'text': 'Slides'},
+            {'link': 'https://www.youtube.com/watch?si=idJpNTGsFumaRhEm&v=4agiduxmhRA&feature=youtu.be', 'text': 'Workshop Recording'}],
+    'logo': LearnPy,
+    'logoWidth': '300'
+  }, {
     'category': 'club',
     'id': 'hoth-xi',
     'hidden': false,
@@ -206,12 +231,11 @@ export const POSTS = [{
             {'link': 'https://hoth.uclaacm.com/workshops', 'text': 'Workshops'}],
     'logo': HOTH,
     'logoWidth': '300'
-  },
-  {
+  }, {
     'category': 'club',
     'id': 'aws-workshop',
     'hidden': false,
-    'title': 'ACM Cloud: AWS Workshop Series',
+    'title': 'ACM Cloud - AWS Workshop Series',
     'location': 'Los Angeles, California',
     'start': 1704153600000,
     'end': 1709337600000,
@@ -236,12 +260,11 @@ export const POSTS = [{
             {'link': 'https://youtube.com/playlist?list=PLPO7_kXilXFbM5ICaiu6qow05bfg_Itz_&si=-ViOz33ol3GwPPpL', 'text': 'Recordings'}],
     'logo': ACMCloudAWS,
     'logoWidth': '330'
-  },
-  {
+  }, {
     'category': 'club',
     'id': 'distributed-systems',
     'hidden': false,
-    'title': 'ACM Cloud Initiative: Distributed Systems Project',
+    'title': 'ACM Cloud Initiative - Distributed Systems Project',
     'location': 'Los Angeles, California',
     'start': 1693551600000,
     'end': 1701417600000,
@@ -309,7 +332,7 @@ export const POSTS = [{
   }, {
     'category': 'club',
     'id': 'stackschool',
-    'hidden': false,
+    'hidden': true,
     'title': 'ACM Hack - StackSchool',
     'location': 'Los Angeles, California',
     'start': 1662015600000,
@@ -367,6 +390,23 @@ export const POSTS = [{
             {'link': "https://github.com/SubramaniamSatyen/CS31", 'text': "CS 31 Repo"}],
   }, {
     'category': 'other',
+    'id': 'laststand',
+    'hidden': false,
+    'title': 'Last Stand',
+    'location': 'Los Angeles, California',
+    'start': 1709337600000,
+    'end': 1717311600000,
+    'blurb': "Last Stand is a 3D Survival FPS game created for an E96 Game Design course alongside two other students. Last Stand follows the story of a prisoner fighting off an unending army of evil robots to surive as long as possible. Featuring a fully interactable, low poly environment and NPCs leveraging Llama models for unique interactions, Last Stand offers a unique and engaging experience with every playthrough.",
+    'skills': {
+      'platforms': ['Unity'],
+      'languages': ['C#'],
+      'concepts': ['NLP']
+    },
+    'logo': LastStand,
+    'logoWidth': '350',
+    'links': [{'link': 'https://subramaniamsatyen.itch.io/last-stand', 'text': 'Play Game'}]
+  }, {
+    'category': 'other',
     'id': 'voice-activated-calculator',
     'hidden': false,
     'title': 'Voice Activated Calculator',
@@ -386,7 +426,7 @@ export const POSTS = [{
   }, {
     'category': 'other',
     'id': 'reactwithme',
-    'hidden': false,
+    'hidden': true,
     'title': 'HackSpace 2022: ReactWithMe',
     'location': 'Los Angeles, California',
     'start': 1646121600000,
@@ -418,6 +458,5 @@ export const POSTS = [{
     'logoWidth': '400',
     'links': [{'link': 'https://subramaniamsatyen.itch.io/project-quest', 'text': 'Game Download'},
               {'link': 'https://drive.google.com/file/d/1Q9eihl2peHomRecCK1Em3EQCI1mR5XPf/view?usp=sharing', 'text': 'Documentation'}]
-
   }
 ]

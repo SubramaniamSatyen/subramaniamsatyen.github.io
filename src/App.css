@@ -67,6 +67,10 @@
   color: var(--color-primary)
 }
 
+.amazon{
+  color: #FF9900
+}
+
 h1 {
   font-size: 2.5em;
   font-weight: 500;
@@ -92,6 +96,13 @@ h3 {
   font-size: 1em;
   font-weight: 600;
   margin-bottom: 10px;
+  font-family: "Segoe UI";
+}
+
+h4 {
+  margin-top: 5px;
+  font-size: 0.4em;
+  font-weight: 400;
   font-family: "Segoe UI";
 }
 

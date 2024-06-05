@@ -10,7 +10,10 @@ function Home({ dimensions }) {
       {dimensions.width > INCLUDE_IMAGE_WIDTH ? 
       <div className="rowTwo">
         <div className='columnTwo leftAlign heroText title'>
-          <h1>Hello, I'm Satyen Subramaniam!</h1>
+          <h1>
+            Hello, I'm <span className='highlight'>Satyen Subramaniam</span>!
+            <h4>SWE Intern @ <span className='amazon'>Amazon</span>, Computer Science and Engineering B.S. @ UCLA 2024</h4>
+          </h1>
           <p className='textBlock'>
             I'm interested in<span className='highlight'>&nbsp;Full-Stack Development</span>,
             <span className='highlight'>&nbsp;Cloud Computing</span>, and<span className='highlight'>&nbsp;Machine Learning</span>!
@@ -31,7 +34,10 @@ function Home({ dimensions }) {
         </div>
       </div> : 
       <div className='mobileHero heroText title'>
-        <h1>Hello, I'm Satyen Subramaniam!</h1>
+          <h1>
+            Hello, I'm <span className='highlight'>Satyen Subramaniam</span>!
+            <h4>SWE Intern @ <span className='amazon'>Amazon</span>, Computer Science and Engineering B.S. @ UCLA 2024</h4>
+          </h1>
         <p className='textBlock'>
           I'm interested in <span className='highlight'>&nbsp;Software Engineering</span>,
           <span className='highlight'>&nbsp;Cloud Computing</span>, and<span className='highlight'>&nbsp;Machine Learning</span>!
